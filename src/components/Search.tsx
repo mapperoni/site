@@ -254,7 +254,8 @@ const SearchInput = forwardRef<
     onClose: () => void
   }
 >(function SearchInput({ autocomplete, autocompleteState, onClose }, inputRef) {
-  let inputProps = autocomplete.getInputProps({ inputElement: null })
+  const localInputRef = inputRef as React.RefObject<HTMLInputElement>
+  let inputProps = autocomplete.getInputProps({ inputElement: localInputRef?.current })
 
   return (
     <div className="group relative flex h-12">
