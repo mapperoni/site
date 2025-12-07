@@ -22,7 +22,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { navigation } from '@/lib/navigation'
-import { type Result } from '@/markdoc/search.mjs'
+import { type Result } from '@/markdoc/search'
 
 type EmptyObject = Record<string, never>
 
@@ -87,7 +87,7 @@ function useAutocomplete({
         navigate,
       },
       getSources({ query }) {
-        return import('@/markdoc/search.mjs').then(({ search }) => {
+        return import('@/markdoc/search').then(({ search }) => {
           return [
             {
               sourceId: 'documentation',
