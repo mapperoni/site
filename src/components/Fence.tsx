@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import { Fragment } from 'react'
-import { Highlight } from 'prism-react-renderer'
+import { Highlight } from "prism-react-renderer";
+import { Fragment } from "react";
 
 export function Fence({
   children,
   language,
 }: {
-  children: string
-  language: string
+  children: string;
+  language: string;
 }) {
   return (
     <Highlight
@@ -26,12 +26,12 @@ export function Fence({
                   .map((token, tokenIndex) => (
                     <span key={tokenIndex} {...getTokenProps({ token })} />
                   ))}
-                {'\n'}
+                {"\n"}
               </Fragment>
             ))}
           </code>
         </pre>
       )}
     </Highlight>
-  )
+  );
 }

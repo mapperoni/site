@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import { Suspense, useCallback, useEffect, useState } from 'react'
-import Link from 'next/link'
-import { usePathname, useSearchParams } from 'next/navigation'
-import { Dialog, DialogPanel } from '@headlessui/react'
+import { Dialog, DialogPanel } from "@headlessui/react";
+import Link from "next/link";
+import { usePathname, useSearchParams } from "next/navigation";
+import { Suspense, useCallback, useEffect, useState } from "react";
 
-import { Logomark } from '@/components/Logo'
-import { Navigation } from '@/components/Navigation'
+import { Logomark } from "@/components/Logo";
+import { Navigation } from "@/components/Navigation";
 
-function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function MenuIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
       aria-hidden="true"
@@ -20,10 +20,10 @@ function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     >
       <path d="M4 7h16M4 12h16M4 17h16" />
     </svg>
-  )
+  );
 }
 
-function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function CloseIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg
       aria-hidden="true"
@@ -35,31 +35,31 @@ function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     >
       <path d="M5 5l14 14M19 5l-14 14" />
     </svg>
-  )
+  );
 }
 
 function CloseOnNavigation({ close }: { close: () => void }) {
-  let pathname = usePathname()
-  let searchParams = useSearchParams()
+  const _pathname = usePathname();
+  const _searchParams = useSearchParams();
 
   useEffect(() => {
-    close()
-  }, [pathname, searchParams, close])
+    close();
+  }, [close]);
 
-  return null
+  return null;
 }
 
 export function MobileNavigation() {
-  let [isOpen, setIsOpen] = useState(false)
-  let close = useCallback(() => setIsOpen(false), [setIsOpen])
+  const [isOpen, setIsOpen] = useState(false);
+  const close = useCallback(() => setIsOpen(false), []);
 
   function onLinkClick(event: React.MouseEvent<HTMLAnchorElement>) {
-    let link = event.currentTarget
+    const link = event.currentTarget;
     if (
       link.pathname + link.search + link.hash ===
       window.location.pathname + window.location.search + window.location.hash
     ) {
-      close()
+      close();
     }
   }
 
@@ -99,5 +99,5 @@ export function MobileNavigation() {
         </DialogPanel>
       </Dialog>
     </>
-  )
+  );
 }

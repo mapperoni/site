@@ -1,73 +1,73 @@
-'use client'
+"use client";
 
 import {
-  forwardRef,
+  type AutocompleteApi,
+  type AutocompleteCollection,
+  type AutocompleteState,
+  createAutocomplete,
+} from "@algolia/autocomplete-core";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import clsx from "clsx";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import {
   Fragment,
+  forwardRef,
   Suspense,
   useCallback,
   useEffect,
   useId,
   useRef,
   useState,
-} from 'react'
-import Highlighter from 'react-highlight-words'
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
-import {
-  type AutocompleteApi,
-  type AutocompleteCollection,
-  type AutocompleteState,
-  createAutocomplete,
-} from '@algolia/autocomplete-core'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import clsx from 'clsx'
+} from "react";
+import Highlighter from "react-highlight-words";
 
-import { navigation } from '@/lib/navigation'
-import { type Result } from '@/markdoc/search'
+import { navigation } from "@/lib/navigation";
+import type { Result } from "@/markdoc/search";
 
-type EmptyObject = Record<string, never>
+type EmptyObject = Record<string, never>;
 
 type Autocomplete = AutocompleteApi<
   Result,
   React.SyntheticEvent,
   React.MouseEvent,
   React.KeyboardEvent
->
+>;
 
-function SearchIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function SearchIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg aria-hidden="true" viewBox="0 0 20 20" {...props}>
       <path d="M16.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM9 14a5 5 0 0 1-5-5H2a7 7 0 0 0 7 7v-2ZM4 9a5 5 0 0 1 5-5V2a7 7 0 0 0-7 7h2Zm5-5a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7v2Zm8.707 12.293-3.757-3.757-1.414 1.414 3.757 3.757 1.414-1.414ZM14 9a4.98 4.98 0 0 1-1.464 3.536l1.414 1.414A6.98 6.98 0 0 0 16 9h-2Zm-1.464 3.536A4.98 4.98 0 0 1 9 14v2a6.98 6.98 0 0 0 4.95-2.05l-1.414-1.414Z" />
     </svg>
-  )
+  );
 }
 
 function useAutocomplete({
   close,
 }: {
-  close: (autocomplete: Autocomplete) => void
+  close: (autocomplete: Autocomplete) => void;
 }) {
-  let id = useId()
-  let router = useRouter()
-  let [autocompleteState, setAutocompleteState] = useState<
+  const id = useId();
+  const router = useRouter();
+  const [autocompleteState, setAutocompleteState] = useState<
     AutocompleteState<Result> | EmptyObject
-  >({})
+  >({});
 
   function navigate({ itemUrl }: { itemUrl?: string }) {
     if (!itemUrl) {
-      return
+      return;
     }
 
-    router.push(itemUrl)
+    router.push(itemUrl);
 
     if (
       itemUrl ===
       window.location.pathname + window.location.search + window.location.hash
     ) {
-      close(autocomplete)
+      close(autocomplete);
     }
   }
 
-  let [autocomplete] = useState<Autocomplete>(() =>
+  const [autocomplete] = useState<Autocomplete>(() =>
     createAutocomplete<
       Result,
       React.SyntheticEvent,
@@ -75,41 +75,41 @@ function useAutocomplete({
       React.KeyboardEvent
     >({
       id,
-      placeholder: 'Find something...',
+      placeholder: "Find something...",
       defaultActiveItemId: 0,
       onStateChange({ state }) {
-        setAutocompleteState(state)
+        setAutocompleteState(state);
       },
       shouldPanelOpen({ state }) {
-        return state.query !== ''
+        return state.query !== "";
       },
       navigator: {
         navigate,
       },
       getSources({ query }) {
-        return import('@/markdoc/search').then(({ search }) => {
+        return import("@/markdoc/search").then(({ search }) => {
           return [
             {
-              sourceId: 'documentation',
+              sourceId: "documentation",
               getItems() {
-                return search(query, { limit: 5 })
+                return search(query, { limit: 5 });
               },
               getItemUrl({ item }) {
-                return item.url
+                return item.url;
               },
               onSelect: navigate,
             },
-          ]
-        })
+          ];
+        });
       },
     }),
-  )
+  );
 
-  return { autocomplete, autocompleteState }
+  return { autocomplete, autocompleteState };
 }
 
-function LoadingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  let id = useId()
+function LoadingIcon(props: React.ComponentPropsWithoutRef<"svg">) {
+  const id = useId();
 
   return (
     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
@@ -134,7 +134,7 @@ function LoadingIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         </linearGradient>
       </defs>
     </svg>
-  )
+  );
 }
 
 function HighlightQuery({ text, query }: { text: string; query: string }) {
@@ -145,7 +145,7 @@ function HighlightQuery({ text, query }: { text: string; query: string }) {
       autoEscape={true}
       textToHighlight={text}
     />
-  )
+  );
 }
 
 function SearchResult({
@@ -154,19 +154,19 @@ function SearchResult({
   collection,
   query,
 }: {
-  result: Result
-  autocomplete: Autocomplete
-  collection: AutocompleteCollection<Result>
-  query: string
+  result: Result;
+  autocomplete: Autocomplete;
+  collection: AutocompleteCollection<Result>;
+  query: string;
 }) {
-  let id = useId()
+  const id = useId();
 
-  let sectionTitle = navigation.find((section) =>
-    section.links.find((link) => link.href === result.url.split('#')[0]),
-  )?.title
-  let hierarchy = [sectionTitle, result.pageTitle].filter(
-    (x): x is string => typeof x === 'string',
-  )
+  const sectionTitle = navigation.find((section) =>
+    section.links.find((link) => link.href === result.url.split("#")[0]),
+  )?.title;
+  const hierarchy = [sectionTitle, result.pageTitle].filter(
+    (x): x is string => typeof x === "string",
+  );
 
   return (
     <li
@@ -196,8 +196,8 @@ function SearchResult({
               <span
                 className={
                   itemIndex === items.length - 1
-                    ? 'sr-only'
-                    : 'mx-2 text-slate-300 dark:text-slate-700'
+                    ? "sr-only"
+                    : "mx-2 text-slate-300 dark:text-slate-700"
                 }
               >
                 /
@@ -207,7 +207,7 @@ function SearchResult({
         </div>
       )}
     </li>
-  )
+  );
 }
 
 function SearchResults({
@@ -215,9 +215,9 @@ function SearchResults({
   query,
   collection,
 }: {
-  autocomplete: Autocomplete
-  query: string
-  collection: AutocompleteCollection<Result>
+  autocomplete: Autocomplete;
+  query: string;
+  collection: AutocompleteCollection<Result>;
 }) {
   if (collection.items.length === 0) {
     return (
@@ -228,7 +228,7 @@ function SearchResults({
         </span>
         &rdquo;
       </p>
-    )
+    );
   }
 
   return (
@@ -243,19 +243,21 @@ function SearchResults({
         />
       ))}
     </ul>
-  )
+  );
 }
 
 const SearchInput = forwardRef<
-  React.ComponentRef<'input'>,
+  React.ComponentRef<"input">,
   {
-    autocomplete: Autocomplete
-    autocompleteState: AutocompleteState<Result> | EmptyObject
-    onClose: () => void
+    autocomplete: Autocomplete;
+    autocompleteState: AutocompleteState<Result> | EmptyObject;
+    onClose: () => void;
   }
 >(function SearchInput({ autocomplete, autocompleteState, onClose }, inputRef) {
-  const localInputRef = inputRef as React.RefObject<HTMLInputElement>
-  let inputProps = autocomplete.getInputProps({ inputElement: localInputRef?.current })
+  const localInputRef = inputRef as React.RefObject<HTMLInputElement>;
+  const inputProps = autocomplete.getInputProps({
+    inputElement: localInputRef?.current,
+  });
 
   return (
     <div className="group relative flex h-12">
@@ -264,52 +266,52 @@ const SearchInput = forwardRef<
         ref={inputRef}
         data-autofocus
         className={clsx(
-          'flex-auto appearance-none bg-transparent pl-12 text-slate-900 outline-hidden placeholder:text-slate-400 focus:w-full focus:flex-none sm:text-sm dark:text-white [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden',
-          autocompleteState.status === 'stalled' ? 'pr-11' : 'pr-4',
+          "flex-auto appearance-none bg-transparent pl-12 text-slate-900 outline-hidden placeholder:text-slate-400 focus:w-full focus:flex-none sm:text-sm dark:text-white [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-decoration]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden",
+          autocompleteState.status === "stalled" ? "pr-11" : "pr-4",
         )}
         {...inputProps}
         onKeyDown={(event) => {
           if (
-            event.key === 'Escape' &&
+            event.key === "Escape" &&
             !autocompleteState.isOpen &&
-            autocompleteState.query === ''
+            autocompleteState.query === ""
           ) {
             // In Safari, closing the dialog with the escape key can sometimes cause the scroll position to jump to the
             // bottom of the page. This is a workaround for that until we can figure out a proper fix in Headless UI.
             if (document.activeElement instanceof HTMLElement) {
-              document.activeElement.blur()
+              document.activeElement.blur();
             }
 
-            onClose()
+            onClose();
           } else {
-            inputProps.onKeyDown(event)
+            inputProps.onKeyDown(event);
           }
         }}
       />
-      {autocompleteState.status === 'stalled' && (
+      {autocompleteState.status === "stalled" && (
         <div className="absolute inset-y-0 right-3 flex items-center">
           <LoadingIcon className="h-6 w-6 animate-spin stroke-slate-200 text-slate-400 dark:stroke-slate-700 dark:text-slate-500" />
         </div>
       )}
     </div>
-  )
-})
+  );
+});
 
 function CloseOnNavigation({
   close,
   autocomplete,
 }: {
-  close: (autocomplete: Autocomplete) => void
-  autocomplete: Autocomplete
+  close: (autocomplete: Autocomplete) => void;
+  autocomplete: Autocomplete;
 }) {
-  let pathname = usePathname()
-  let searchParams = useSearchParams()
+  const _pathname = usePathname();
+  const _searchParams = useSearchParams();
 
   useEffect(() => {
-    close(autocomplete)
-  }, [pathname, searchParams, close, autocomplete])
+    close(autocomplete);
+  }, [close, autocomplete]);
 
-  return null
+  return null;
 }
 
 function SearchDialog({
@@ -317,46 +319,46 @@ function SearchDialog({
   setOpen,
   className,
 }: {
-  open: boolean
-  setOpen: (open: boolean) => void
-  className?: string
+  open: boolean;
+  setOpen: (open: boolean) => void;
+  className?: string;
 }) {
-  let formRef = useRef<React.ComponentRef<'form'>>(null)
-  let panelRef = useRef<React.ComponentRef<'div'>>(null)
-  let inputRef = useRef<React.ComponentRef<typeof SearchInput>>(null)
+  const formRef = useRef<React.ComponentRef<"form">>(null);
+  const panelRef = useRef<React.ComponentRef<"div">>(null);
+  const inputRef = useRef<React.ComponentRef<typeof SearchInput>>(null);
 
-  let close = useCallback(
+  const close = useCallback(
     (autocomplete: Autocomplete) => {
-      setOpen(false)
-      autocomplete.setQuery('')
+      setOpen(false);
+      autocomplete.setQuery("");
     },
     [setOpen],
-  )
+  );
 
-  let { autocomplete, autocompleteState } = useAutocomplete({
+  const { autocomplete, autocompleteState } = useAutocomplete({
     close() {
-      close(autocomplete)
+      close(autocomplete);
     },
-  })
+  });
 
   useEffect(() => {
     if (open) {
-      return
+      return;
     }
 
     function onKeyDown(event: KeyboardEvent) {
-      if (event.key === 'k' && (event.metaKey || event.ctrlKey)) {
-        event.preventDefault()
-        setOpen(true)
+      if (event.key === "k" && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        setOpen(true);
       }
     }
 
-    window.addEventListener('keydown', onKeyDown)
+    window.addEventListener("keydown", onKeyDown);
 
     return () => {
-      window.removeEventListener('keydown', onKeyDown)
-    }
-  }, [open, setOpen])
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open, setOpen]);
 
   return (
     <>
@@ -366,7 +368,7 @@ function SearchDialog({
       <Dialog
         open={open}
         onClose={() => close(autocomplete)}
-        className={clsx('fixed inset-0 z-50', className)}
+        className={clsx("fixed inset-0 z-50", className)}
       >
         <div className="fixed inset-0 bg-slate-900/50 backdrop-blur-sm" />
 
@@ -404,42 +406,42 @@ function SearchDialog({
         </div>
       </Dialog>
     </>
-  )
+  );
 }
 
 function useSearchProps() {
-  let buttonRef = useRef<React.ComponentRef<'button'>>(null)
-  let [open, setOpen] = useState(false)
+  const buttonRef = useRef<React.ComponentRef<"button">>(null);
+  const [open, setOpen] = useState(false);
 
   return {
     buttonProps: {
       ref: buttonRef,
       onClick() {
-        setOpen(true)
+        setOpen(true);
       },
     },
     dialogProps: {
       open,
       setOpen: useCallback((open: boolean) => {
-        let { width = 0, height = 0 } =
-          buttonRef.current?.getBoundingClientRect() ?? {}
+        const { width = 0, height = 0 } =
+          buttonRef.current?.getBoundingClientRect() ?? {};
         if (!open || (width !== 0 && height !== 0)) {
-          setOpen(open)
+          setOpen(open);
         }
       }, []),
     },
-  }
+  };
 }
 
 export function Search() {
-  let [modifierKey, setModifierKey] = useState<string>()
-  let { buttonProps, dialogProps } = useSearchProps()
+  const [modifierKey, setModifierKey] = useState<string>();
+  const { buttonProps, dialogProps } = useSearchProps();
 
   useEffect(() => {
     setModifierKey(
-      /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl ',
-    )
-  }, [])
+      /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? "⌘" : "Ctrl ",
+    );
+  }, []);
 
   return (
     <>
@@ -461,5 +463,5 @@ export function Search() {
       </button>
       <SearchDialog {...dialogProps} />
     </>
-  )
+  );
 }

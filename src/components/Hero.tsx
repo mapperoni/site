@@ -1,35 +1,35 @@
-import { Fragment } from 'react'
-import Image from 'next/image'
-import clsx from 'clsx'
-import { Highlight } from 'prism-react-renderer'
+import clsx from "clsx";
+import Image from "next/image";
+import { Highlight } from "prism-react-renderer";
+import { Fragment } from "react";
 
-import { Button } from '@/components/Button'
-import { HeroBackground } from '@/components/HeroBackground'
-import blurCyanImage from '@/images/blur-cyan.png'
-import blurIndigoImage from '@/images/blur-indigo.png'
+import { Button } from "@/components/Button";
+import { HeroBackground } from "@/components/HeroBackground";
+import blurCyanImage from "@/images/blur-cyan.png";
+import blurIndigoImage from "@/images/blur-indigo.png";
 
-const codeLanguage = 'javascript'
+const codeLanguage = "javascript";
 const code = `export default {
   strategy: 'predictive',
   engine: {
     cpus: 12,
     backups: ['./storage/cache.wtf'],
   },
-}`
+}`;
 
 const tabs = [
-  { name: 'cache-advance.config.js', isActive: true },
-  { name: 'package.json', isActive: false },
-]
+  { name: "cache-advance.config.js", isActive: true },
+  { name: "package.json", isActive: false },
+];
 
-function TrafficLightsIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function TrafficLightsIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (
     <svg aria-hidden="true" viewBox="0 0 42 10" fill="none" {...props}>
       <circle cx="5" cy="5" r="4.5" />
       <circle cx="21" cy="5" r="4.5" />
       <circle cx="37" cy="5" r="4.5" />
     </svg>
-  )
+  );
 }
 
 export function Hero() {
@@ -98,16 +98,16 @@ export function Hero() {
                       <div
                         key={tab.name}
                         className={clsx(
-                          'flex h-6 rounded-full',
+                          "flex h-6 rounded-full",
                           tab.isActive
-                            ? 'bg-linear-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300'
-                            : 'text-slate-500',
+                            ? "bg-linear-to-r from-sky-400/30 via-sky-400 to-sky-400/30 p-px font-medium text-sky-300"
+                            : "text-slate-500",
                         )}
                       >
                         <div
                           className={clsx(
-                            'flex items-center rounded-full px-2.5',
-                            tab.isActive && 'bg-slate-800',
+                            "flex items-center rounded-full px-2.5",
+                            tab.isActive && "bg-slate-800",
                           )}
                         >
                           {tab.name}
@@ -121,10 +121,10 @@ export function Hero() {
                       className="border-r border-slate-300/5 pr-4 font-mono text-slate-600 select-none"
                     >
                       {Array.from({
-                        length: code.split('\n').length,
+                        length: code.split("\n").length,
                       }).map((_, index) => (
                         <Fragment key={index}>
-                          {(index + 1).toString().padStart(2, '0')}
+                          {(index + 1).toString().padStart(2, "0")}
                           <br />
                         </Fragment>
                       ))}
@@ -144,7 +144,7 @@ export function Hero() {
                         <pre
                           className={clsx(
                             className,
-                            'flex overflow-x-auto pb-6',
+                            "flex overflow-x-auto pb-6",
                           )}
                           style={style}
                         >
@@ -171,5 +171,5 @@ export function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
