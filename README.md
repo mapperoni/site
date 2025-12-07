@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Mapperoni.com
+==============
 
-## Getting Started
+A Markdoc-powered documentation site built with Next.js 16 (App Router) and Tailwind CSS 4. The content lives in Markdown (`page.md`) files under `src/app`, and a small Markdoc schema adds custom components, syntax highlighting, and a FlexSearch-based doc search.
 
-First, run the development server:
+## Quick start
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Install dependencies: `pnpm install` (pnpm is recommended; npm/yarn also work).
+- Run the dev server: `pnpm dev` then open http://localhost:3000.
+- Lint/format: `pnpm lint` (Biome) and `pnpm format`.
+- Production build: `pnpm build` then `pnpm start`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project layout
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/app` — App Router pages; docs live in nested `page.md` files (frontmatter supplies titles/metadata).
+- `src/markdoc` — Markdoc schema (`nodes.js`, `tags.js`) and client search indexer.
+- `src/components` — UI building blocks for the docs shell, navigation, and content rendering.
+- `scripts/generate-search-data.mjs` — Build-time script that parses Markdown and emits `.generated/search-data.json` for client-side search.
+- `public` — Static assets such as the favicon and social images.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Markdoc authoring tips
 
-## Learn More
+- Add new docs by creating a `page.md` inside `src/app/docs/<slug>/` with YAML frontmatter (`title`, optional `nextjs.metadata`).
+- Custom tags (e.g., callouts, quick links) are defined in `src/markdoc/tags.js`; nodes like code blocks/links are configured in `src/markdoc/nodes.js`.
+- Navigation is controlled in `src/lib/navigation.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+## Search indexing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`pnpm build` runs `scripts/generate-search-data.mjs` before Next's build to create `.generated/search-data.json`. If you add or rename pages, re-run the script (or `pnpm build`) so search stays in sync.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Requirements
 
-## Deploy on Vercel
+- Node 18+ (matches Next.js 16 support matrix).
+- PNPM 8+ recommended; other package managers work but may not respect the `pnpm-lock.yaml`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app is a standard Next.js output. Any platform that supports `next start` will work. Ensure the build step runs `pnpm build` so the search index is generated before serving.
