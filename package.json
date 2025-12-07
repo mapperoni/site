@@ -14,7 +14,6 @@
     "@headlessui/react": "^2.2.9",
     "@markdoc/markdoc": "^0.5.4",
     "@markdoc/next.js": "^0.5.0",
-    "@sindresorhus/slugify": "^3.0.0",
     "@types/react-highlight-words": "^0.20.0",
     "clsx": "^2.1.1",
     "fast-glob": "^3.3.3",

@@ -20,7 +20,7 @@ High-level map of how the site is built and what runs where.
 - Theme switching uses `next-themes` with class-based toggling to avoid layout shifts.
 
 ## Data flow
-- Content source: Markdown files with frontmatter titles; Markdoc converts headings into IDs via `slugify`, and `collectSections` (`src/lib/sections.ts`) builds the table of contents from the AST passed into `DocsLayout`.
+- Content source: Markdown files with frontmatter titles; headings are slugified by a shared helper (`src/lib/slugify.js`), and `collectSections` (`src/lib/sections.ts`) builds the table of contents from the AST passed into `DocsLayout`.
 - Navigation source of truth: `navigation.ts` powers the sidebar, prev/next, and the hierarchy line in search results.
 - Search data: `.generated/search-data.json` created at build time and consumed client-side by `src/markdoc/search.ts`; no remote API calls are made for search.
 

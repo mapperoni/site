@@ -4,8 +4,9 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import Markdoc from "@markdoc/markdoc";
-import { slugifyWithCounter } from "@sindresorhus/slugify";
 import glob from "fast-glob";
+
+import { slugifyWithCounter } from "../src/lib/slugify.js";
 
 const slugify = slugifyWithCounter();
 
