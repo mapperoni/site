@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import Link from "next/link";
+import clsx from "@/lib/clsx";
 
 const variantStyles = {
   primary:

@@ -5,9 +5,10 @@ import {
   ListboxOption,
   ListboxOptions,
 } from "@headlessui/react";
-import clsx from "clsx";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+
+import clsx from "@/lib/clsx";
 
 const themes = [
   { name: "Light", value: "light", icon: LightIcon },

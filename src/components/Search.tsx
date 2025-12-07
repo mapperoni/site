@@ -7,7 +7,6 @@ import {
   createAutocomplete,
 } from "@algolia/autocomplete-core";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import clsx from "clsx";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   Fragment,
@@ -21,6 +20,7 @@ import {
 } from "react";
 import Highlighter from "react-highlight-words";
 
+import clsx from "@/lib/clsx";
 import { navigation } from "@/lib/navigation";
 import type { Result } from "@/markdoc/search";
 

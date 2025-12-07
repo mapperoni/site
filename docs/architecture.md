@@ -29,3 +29,6 @@ High-level map of how the site is built and what runs where.
 - Client bundle weight is driven mainly by the design system, search (FlexSearch + autocomplete), and syntax highlighting; lazy-loading search keeps that cost off the critical path.
 - Build time scales with the number of Markdown pages (Markdoc parse + Next prerender + search-data generation). Large doc sets may warrant incremental search-data builds or chunked indexes.
 - Infra cost is dominated by storage and CDN egress; no databases or dynamic backends are required for the current feature set.
+
+# Future improvements
+Find a way to lazy load the Fence / syntax highlighting so that we don't load `prism-react-renderer`

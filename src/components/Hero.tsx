@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import Image from "next/image";
 import { Highlight } from "prism-react-renderer";
 import { Fragment } from "react";
@@ -7,6 +6,7 @@ import { Button } from "@/components/Button";
 import { HeroBackground } from "@/components/HeroBackground";
 import blurCyanImage from "@/images/blur-cyan.png";
 import blurIndigoImage from "@/images/blur-indigo.png";
+import clsx from "@/lib/clsx";
 
 const codeLanguage = "javascript";
 const code = `export default {

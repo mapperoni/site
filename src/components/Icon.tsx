@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { useId } from "react";
 
 import { InstallationIcon } from "@/components/icons/InstallationIcon";
@@ -7,6 +6,7 @@ import { PluginsIcon } from "@/components/icons/PluginsIcon";
 import { PresetsIcon } from "@/components/icons/PresetsIcon";
 import { ThemingIcon } from "@/components/icons/ThemingIcon";
 import { WarningIcon } from "@/components/icons/WarningIcon";
+import clsx from "@/lib/clsx";
 
 const icons = {
   installation: InstallationIcon,

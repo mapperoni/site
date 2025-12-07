@@ -4,11 +4,27 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import Markdoc from "@markdoc/markdoc";
-import glob from "fast-glob";
 
 import { slugifyWithCounter } from "../src/lib/slugify.js";
 
 const slugify = slugifyWithCounter();
+
+function findPages(dir, base = dir) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const files = [];
+
+  for (const entry of entries) {
+    const entryPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      files.push(...findPages(entryPath, base));
+    } else if (entry.name === "page.md") {
+      files.push(path.relative(base, entryPath));
+    }
+  }
+
+  return files;
+}
 
 function nodeToString(node) {
   let str =
@@ -44,7 +60,7 @@ function extractSections(node, sections, isRoot = true) {
 
 function generateSearchData() {
   const pagesDir = path.resolve("./src/app");
-  const files = glob.sync("**/page.md", { cwd: pagesDir });
+  const files = findPages(pagesDir);
 
   const data = files.map((file) => {
     const url =

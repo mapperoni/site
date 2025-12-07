@@ -1,9 +1,9 @@
 "use client";
 
-import clsx from "clsx";
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 
+import clsx from "@/lib/clsx";
 import type { Section, Subsection } from "@/lib/sections";
 
 export function TableOfContents({

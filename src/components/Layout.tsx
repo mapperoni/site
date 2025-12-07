@@ -1,6 +1,5 @@
 "use client";
 
-import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -11,6 +10,7 @@ import { MobileNavigation } from "@/components/MobileNavigation";
 import { Navigation } from "@/components/Navigation";
 import { Search } from "@/components/Search";
 import { ThemeSelector } from "@/components/ThemeSelector";
+import clsx from "@/lib/clsx";
 
 function GitHubIcon(props: React.ComponentPropsWithoutRef<"svg">) {
   return (

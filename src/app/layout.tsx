@@ -1,10 +1,10 @@
-import clsx from "clsx";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 import { Providers } from "@/app/providers";
 import { Layout } from "@/components/Layout";
+import clsx from "@/lib/clsx";
 
 import "@/styles/tailwind.css";
 
