@@ -247,7 +247,7 @@ function SearchResults({
 }
 
 const SearchInput = forwardRef<
-  React.ElementRef<'input'>,
+  React.ComponentRef<'input'>,
   {
     autocomplete: Autocomplete
     autocompleteState: AutocompleteState<Result> | EmptyObject
@@ -321,9 +321,9 @@ function SearchDialog({
   setOpen: (open: boolean) => void
   className?: string
 }) {
-  let formRef = useRef<React.ElementRef<'form'>>(null)
-  let panelRef = useRef<React.ElementRef<'div'>>(null)
-  let inputRef = useRef<React.ElementRef<typeof SearchInput>>(null)
+  let formRef = useRef<React.ComponentRef<'form'>>(null)
+  let panelRef = useRef<React.ComponentRef<'div'>>(null)
+  let inputRef = useRef<React.ComponentRef<typeof SearchInput>>(null)
 
   let close = useCallback(
     (autocomplete: Autocomplete) => {
@@ -408,7 +408,7 @@ function SearchDialog({
 }
 
 function useSearchProps() {
-  let buttonRef = useRef<React.ElementRef<'button'>>(null)
+  let buttonRef = useRef<React.ComponentRef<'button'>>(null)
   let [open, setOpen] = useState(false)
 
   return {
