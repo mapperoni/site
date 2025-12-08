@@ -4,6 +4,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactCompiler: true,
   pageExtensions: ["js", "jsx", "ts", "tsx", "md"],
+  images: {
+    dangerouslyAllowSVG: true,
+  },
 };
 
 // Note: @markdoc/next.js uses this.getResolve() which is not supported by Turbopack.

@@ -1,14 +1,23 @@
 ---
-title: Getting started
+title: What is it?
 ---
 
-Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}
+A form-builder and survey tool that also enables the collection of crowd-sourced map data. {% .lead %}
+
+Mapperoni is useful for anyone who wants to collect information from a large number of people. It is particularly loved by public agencies, planning consultants, NGOs and academics.
+
+- Secure, private & compliant. Hosted in the EU.
+- Simple but customizable. Conditional questions, markdown formatting, privacy controls and more.
+- Mapping powers. Invite your audience to draw points, lines and polygons.
+- Portable data. Easily export to CSV and GeoJSON.
+- Full control. Manage privacy, visibility, access, and data retention.
+- Invite your team members to edit and manage your project together.
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="Try the demo" icon="installation" href="https://app.mapperoni.com/t/official/p/demo" description="See a real mapperoni project in action!" /%}
 
-{% quick-link title="Architecture guide" icon="presets" href="/" description="Learn how the internals work and contribute." /%}
+{% quick-link title="Custom deployment" icon="presets" href="/" description="Run your own instance, on your own domain, for total control." /%}
 
 {% quick-link title="Plugins" icon="plugins" href="/" description="Extend the library with third-party plugins or write your own." /%}
 

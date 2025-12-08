@@ -1,8 +1,8 @@
 export const navigation = [
   {
-    title: "Introduction",
+    title: "Product Overview",
     links: [
-      { title: "Getting started", href: "/" },
+      { title: "What is it?", href: "/" },
       { title: "Installation", href: "/docs/installation" },
     ],
   },
