@@ -10,7 +10,7 @@ import {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden bg-gray-100 dark:-mt-19 dark:-mb-32 dark:pt-19 dark:pb-32">
+    <div className="overflow-hidden bg-gray-100">
       <div className="py-16 sm:px-2 lg:px-0 lg:py-20 relative">
         <div className="mx-auto grid max-w-8xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12 relative">
           <div className="relative z-10 md:text-center lg:text-left">
@@ -19,7 +19,7 @@ export function Hero() {
                 Survey forms + collaborative maps.
               </p>
               <p className="mt-3 text-2xl tracking-tight text-primary-content">
-                Professionals around the world use mapperoni for public
+                Professionals around the world use mapperoni to collect data. For public
                 participation, urban planning, academic
                 research and more.
               </p>

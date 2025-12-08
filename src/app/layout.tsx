@@ -39,10 +39,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx("h-full antialiased", inter.variable, lexend.variable)}
-      suppressHydrationWarning
+      className={clsx("h-full antialiased light", inter.variable, lexend.variable)}
     >
-      <body className="flex min-h-full bg-white dark:bg-slate-900">
+      <body className="flex min-h-full bg-white">
         <Providers>
           <Layout>{children}</Layout>
         </Providers>
