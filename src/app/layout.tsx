@@ -29,6 +29,11 @@ export const metadata: Metadata = {
   },
   description:
     "Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({
@@ -39,7 +44,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx("h-full antialiased light", inter.variable, lexend.variable)}
+      className={clsx(
+        "h-full antialiased light",
+        inter.variable,
+        lexend.variable,
+      )}
     >
       <body className="flex min-h-full bg-white">
         <Providers>

@@ -20,9 +20,7 @@ export const navigation = [
   },
   {
     title: "Enterprise",
-    links: [
-      { title: "Custom deployments", href: "/docs/deployments" },
-    ],
+    links: [{ title: "Custom deployments", href: "/docs/deployments" }],
   },
   {
     title: "Compliance",

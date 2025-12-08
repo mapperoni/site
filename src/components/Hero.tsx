@@ -19,12 +19,15 @@ export function Hero() {
                 Survey forms + collaborative maps.
               </p>
               <p className="mt-3 text-2xl tracking-tight text-primary-content">
-                Professionals around the world use mapperoni to collect data. For public
-                participation, urban planning, academic
-                research and more.
+                Professionals around the world use mapperoni to collect data.
+                For public participation, urban planning, academic research and
+                more.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="https://app.mapperoni.com/t/official/p/demo" variant="accent">
+                <Button
+                  href="https://app.mapperoni.com/t/official/p/demo"
+                  variant="accent"
+                >
                   <EyeIcon className="size-5" />
                   View demo
                 </Button>

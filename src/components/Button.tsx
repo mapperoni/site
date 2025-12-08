@@ -7,7 +7,7 @@ const button =
 const variantStyles = {
   primary: "bg-primary",
   secondary: "bg-neutral text-neutral-content",
-  accent: "bg-accent"
+  accent: "bg-accent",
 };
 
 type ButtonProps = {
