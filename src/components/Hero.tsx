@@ -24,7 +24,7 @@ export function Hero() {
                 research and more.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/" variant="accent">
+                <Button href="https://app.mapperoni.com/t/official/p/demo" variant="accent">
                   <EyeIcon className="size-5" />
                   View demo
                 </Button>

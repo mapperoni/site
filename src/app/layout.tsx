@@ -25,7 +25,7 @@ const lexend = localFont({
 export const metadata: Metadata = {
   title: {
     template: "%s - Docs",
-    default: "Mapperoni - Collaborative maps and survey forms.",
+    default: "mapperoni",
   },
   description:
     "Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.",
