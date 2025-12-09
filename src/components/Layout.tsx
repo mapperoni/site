@@ -2,42 +2,26 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 
 import { Button } from "@/components/Button";
 import { Hero } from "@/components/Hero";
-import { Logo, Logomark } from "@/components/Logo";
+import { Logo } from "@/components/Logo";
 import { MobileNavigation } from "@/components/MobileNavigation";
 import { Navigation } from "@/components/Navigation";
 import { Search } from "@/components/Search";
-import clsx from "@/lib/clsx";
 
 function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    function onScroll() {
-      setIsScrolled(window.scrollY > 0);
-    }
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
   return (
-    <header className="sticky top-0 z-50 flex flex-none flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8">
-      <div className="mr-6 flex lg:hidden">
+    <header className="sticky top-0 z-50 flex flex-none flex-wrap gap-2 sm:gap-4 lg:gap-6 items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8">
+      <div className="flex lg:hidden">
         <MobileNavigation />
       </div>
       <div className="relative flex grow basis-0 items-center">
         <Link href="/" aria-label="Home page">
-          <Logomark className="h-12 w-12 sm:h-14 sm:w-14 lg:hidden" />
-          <Logo className="hidden h-12 w-auto fill-slate-700 lg:block" />
+          <Logo className="h-8 w-auto" />
         </Link>
       </div>
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
+      <div>
         <Search />
       </div>
       <div className="relative flex basis-0 justify-end md:grow">

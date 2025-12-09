@@ -21,7 +21,3 @@ export function Logo({ alt = "Mapperoni", ...props }: LogoProps) {
     />
   );
 }
-
-export function Logomark(props: LogoProps) {
-  return <Logo {...props} />;
-}

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import clsx from "@/lib/clsx";
 import type { Section, Subsection } from "@/lib/sections";
@@ -13,43 +13,33 @@ export function TableOfContents({
 }) {
   const [currentSection, setCurrentSection] = useState(tableOfContents[0]?.id);
 
-  const getHeadings = useCallback((tableOfContents: Array<Section>) => {
-    return tableOfContents
-      .flatMap((node) => [node.id, ...node.children.map((child) => child.id)])
-      .map((id) => {
-        const el = document.getElementById(id);
-        if (!el) return null;
-
-        const style = window.getComputedStyle(el);
-        const scrollMt = parseFloat(style.scrollMarginTop);
-
-        const top = window.scrollY + el.getBoundingClientRect().top - scrollMt;
-        return { id, top };
-      })
-      .filter((x): x is { id: string; top: number } => x !== null);
-  }, []);
-
   useEffect(() => {
     if (tableOfContents.length === 0) return;
-    const headings = getHeadings(tableOfContents);
-    function onScroll() {
-      const top = window.scrollY;
-      let current = headings[0].id;
-      for (const heading of headings) {
-        if (top >= heading.top - 10) {
-          current = heading.id;
-        } else {
-          break;
+
+    const headingIds = tableOfContents.flatMap((section) => [
+      section.id,
+      ...section.children.map((child) => child.id),
+    ]);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setCurrentSection(entry.target.id);
+            break;
+          }
         }
-      }
-      setCurrentSection(current);
-    }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, [getHeadings, tableOfContents]);
+      },
+      { rootMargin: "-80px 0px -80% 0px" },
+    );
+
+    headingIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [tableOfContents]);
 
   function isActive(section: Section | Subsection) {
     if (section.id === currentSection) {
