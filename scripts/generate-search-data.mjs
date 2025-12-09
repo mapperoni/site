@@ -5,7 +5,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import Markdoc from "@markdoc/markdoc";
 
-import { slugifyWithCounter } from "../src/lib/slugify.js";
+import { slugifyWithCounter } from "../src/lib/slugify.mjs";
 
 const slugify = slugifyWithCounter();
 

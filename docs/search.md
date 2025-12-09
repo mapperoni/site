@@ -6,7 +6,7 @@ How search works end-to-end for the documentation site, from index generation to
 - Entrypoint: `scripts/generate-search-data.mjs`, invoked by `pnpm build` before `next build`.
 - Discovery: scans `src/app/**/page.md` so every Markdoc page becomes searchable.
 - Parsing: uses `@markdoc/markdoc` to walk the AST; frontmatter `title` becomes the page title stored as the first section.
-- Section extraction: collects headings up to level 2 and the paragraphs that follow them. Headings get stable IDs via the shared slugify helper (`src/lib/slugify.js`); paragraphs are appended to the most recent section. H3+ content is not indexed.
+- Section extraction: collects headings up to level 2 and the paragraphs that follow them. Headings get stable IDs via the shared slugify helper (`src/lib/slugify.mjs`); paragraphs are appended to the most recent section. H3+ content is not indexed.
 - Shape: each page is serialized to `{ url, sections: [title, hash | null, [paragraphs...]][] }` and written to `.generated/search-data.json` (created if missing). The first section has `hash: null` so top-level page hits link to the page root; sub-sections include `#hash` in their URLs.
 
 ## Runtime search engine
