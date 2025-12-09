@@ -39,12 +39,12 @@ function CloseIcon(props: React.ComponentPropsWithoutRef<"svg">) {
 }
 
 function CloseOnNavigation({ close }: { close: () => void }) {
-  const _pathname = usePathname();
-  const _searchParams = useSearchParams();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     close();
-  }, [close]);
+  }, [pathname, searchParams, close]);
 
   return null;
 }
@@ -71,7 +71,7 @@ export function MobileNavigation() {
         className="relative"
         aria-label="Open navigation"
       >
-        <MenuIcon className="h-10 w-10 stroke-slate-500" />
+        <MenuIcon className="h-8 w-8 stroke-slate-500" />
       </button>
       <Suspense fallback={null}>
         <CloseOnNavigation close={close} />
