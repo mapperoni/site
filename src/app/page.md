@@ -5,7 +5,7 @@ title: What is it?
 A form-builder and survey tool that also enables the collection of crowd-sourced map data. {% .lead %}
 
 {% callout type="warning" title="Alpha Test Preview" %}
-Mapperoni is currently in a 'test phase' for early feedback through December and January 2025. Official release is planned for February 2025. **Projects created before February 2025 may not be retained**. These docs are incomplete and the product has known bugs.
+Mapperoni is currently in a 'test phase' for early feedback through January 2026. Official release is planned for February 2026. **Projects created before February 2026 may not be retained**. These docs are incomplete and the product has known bugs.
 {% /callout %}
 
 ## Key features
