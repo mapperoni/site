@@ -1,5 +1,6 @@
 import { Callout } from "@/components/Callout";
 import { QuickLink, QuickLinks } from "@/components/QuickLinks";
+import { PricingTier, PricingTiers } from "@/components/PricingTiers";
 
 const tags = {
   callout: {
@@ -40,6 +41,19 @@ const tags = {
       description: { type: String },
       icon: { type: String },
       href: { type: String },
+    },
+  },
+  "pricing-tiers": {
+    render: PricingTiers,
+  },
+  "pricing-tier": {
+    selfClosing: true,
+    render: PricingTier,
+    attributes: {
+      name: { type: String },
+      price: { type: String },
+      features: { type: Array },
+      highlight: { type: Boolean, default: false },
     },
   },
 };
