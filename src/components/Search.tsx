@@ -7,7 +7,7 @@ import {
   createAutocomplete,
 } from "@algolia/autocomplete-core";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import clsx from "clsx";
+import clsx from "@/lib/clsx";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   Fragment,
