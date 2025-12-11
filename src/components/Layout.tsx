@@ -12,7 +12,8 @@ import { Search } from "@/components/Search";
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 flex flex-none flex-wrap gap-2 sm:gap-4 lg:gap-6 items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-50 bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 sm:px-6 lg:px-8">
+      <div className="flex flex-none flex-wrap gap-2 sm:gap-4 lg:gap-6 items-center justify-between max-w-7xl mx-auto w-full">
       <div className="flex lg:hidden">
         <MobileNavigation />
       </div>
@@ -28,6 +29,7 @@ function Header() {
         <Button href="https://app.mapperoni.com/" variant="primary">
           Login
         </Button>
+      </div>
       </div>
     </header>
   );

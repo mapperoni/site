@@ -1,9 +1,5 @@
 export function PricingTiers({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="not-prose my-12 space-y-4">
-      {children}
-    </div>
-  );
+  return <div className="not-prose my-12 space-y-4">{children}</div>;
 }
 
 export function PricingTier({
@@ -41,7 +37,9 @@ export function PricingTier({
               className="text-md text-slate-700 dark:text-slate-300"
             >
               {feature.startsWith("Everything") ? (
-                <em className="text-slate-500 dark:text-slate-400">{feature}</em>
+                <em className="text-slate-500 dark:text-slate-400">
+                  {feature}
+                </em>
               ) : (
                 feature
               )}
