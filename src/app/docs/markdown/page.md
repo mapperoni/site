@@ -1,12 +1,12 @@
 ---
-title: Markdown Tutorial
+title: Markdown Formatting
 nextjs:
   metadata:
-    title: Markdown Tutorial & Reference
+    title: Markdown Formatting
     description: Use markdown to customize your project.
 ---
 
-This is a demonstration of how you can use markdown to customize pages and format text in your mapperoni project. {% .lead %}
+This is a demonstration of how you can use markdown to style pages and text in your mapperoni project. {% .lead %}
 
 ## What is it?
 
@@ -106,3 +106,5 @@ And another line break.
 For security, we do not allow you to write plain HTML or CSS.
 
 We support a limited subset of [GitHub Flavored Markdown](https://github.github.com/gfm/), but we do not support all features.
+
+We not plan to implement a "what you see is what you get" (WYSIWYG) editor experience or visual toolbar. Our editor is intentionally simple. Raw markdown is superior!
