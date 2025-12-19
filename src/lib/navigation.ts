@@ -10,7 +10,7 @@ export const navigation = [
   {
     title: "Guides & Tutorials",
     links: [
-      { title: "Quickstart & key concepts", href: "/docs/quickstart" },
+      { title: "Quickstart", href: "/docs/quickstart" },
       { title: "Markdown formatting", href: "/docs/markdown" },
       {
         title: "Conditional questions",
