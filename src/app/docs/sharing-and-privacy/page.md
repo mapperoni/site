@@ -49,12 +49,8 @@ Force users to log in to their account, which requires that they have an active 
 **Team members only**  
 Force users to log in and requires that they are a member of your team to proceed. If they are not a member they will see a "403 Access forbidden" error.
 
-## Enable contributions
+## Contribution control
 
 You can prevent users from submitting new responses by disabling contributions. This applies to all the form fields and maps on all pages.
 
-This setting is useful to prevent users from contributing too early (before the project is ready) or too late (after the project has concluded). If you disable contributions, your project is *read-only*-- users can still see existing map data and page content.
-
-## Secret links (coming soon)
-
-Stay tuned for a new feature that allows you to create and destroy unique links for total control over how users access the project.
+This setting is useful to prevent users from contributing too early (before the project is ready) or too late (after the project has concluded). If you disable contributions, your project is *read-only*: users with access to a read-only project can still see existing map data and page content.
