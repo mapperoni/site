@@ -12,6 +12,7 @@ export const navigation = [
     links: [
       { title: "Quickstart", href: "/docs/quickstart" },
       { title: "Markdown formatting", href: "/docs/markdown" },
+      { title: "Sharing and privacy", href: "/docs/sharing-and-privacy" },
       {
         title: "Conditional questions",
         href: "/docs/conditional-questions",

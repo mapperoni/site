@@ -6,7 +6,7 @@ nextjs:
     description: Use markdown to customize your project.
 ---
 
-This is a demonstration of how you can use markdown to style pages and text in your mapperoni project. {% .lead %}
+A simple and easy way to style pages and text in your mapperoni project. {% .lead %}
 
 ## What is it?
 

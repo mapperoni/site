@@ -1,6 +1,7 @@
 import { Callout } from "@/components/Callout";
 import { QuickLink, QuickLinks } from "@/components/QuickLinks";
 import { PricingTier, PricingTiers } from "@/components/PricingTiers";
+import { NextImage } from "@/components/NextImage";
 
 const tags = {
   callout: {
@@ -29,6 +30,15 @@ const tags = {
         <figcaption>{caption}</figcaption>
       </figure>
     ),
+  },
+  "next-image": {
+    attributes: {
+      src: { type: String },
+      alt: { type: String },
+      width: { type: Number },
+      height: { type: Number },
+    },
+    render: NextImage,
   },
   "quick-links": {
     render: QuickLinks,
