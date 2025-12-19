@@ -4,7 +4,7 @@ High-level map of how the site is built and what runs where.
 
 ## Framework and routing
 - Next.js 16 App Router with `pageExtensions` including `md`, plus `@markdoc/next.js` to compile Markdown into React. Webpack is forced (`--webpack`) because the Markdoc loader lacks Turbopack support.
-- The root layout (`src/app/layout.tsx`) is a server component: sets metadata, loads fonts via `next/font`, and wraps everything in the client-side `Providers` (`next-themes`).
+- The root layout (`src/app/layout.tsx`) is a server component: sets metadata, loads fonts via `next/font`, and wraps everything in the client-side `Providers`.
 - Pages live under `src/app/**/page.md`; Markdoc renders them through custom nodes/tags (`src/markdoc/nodes.js`, `src/markdoc/tags.js`) so content flows into `DocsLayout`, which builds the article shell, prev/next links, and table of contents.
 - Routing/navigation metadata is centralized in `src/lib/navigation.ts` and drives the sidebar, breadcrumbs in search results, and prev/next link selection.
 
@@ -17,7 +17,7 @@ High-level map of how the site is built and what runs where.
 - Marked with `"use client"`: `Layout` (header, hero, and slot), `Search`, `TableOfContents`, `PrevNextLinks`, `DocsHeader` (anchors), `Fence` (Prism highlighting), `MobileNavigation`, and `Providers`.
 - Search UI (`src/components/Search.tsx`) lazy-loads the FlexSearch index to keep initial JS lighter and uses Algolia Autocomplete core for keyboard/focus handling.
 - Table of contents (`src/components/TableOfContents.tsx`) runs an intersection-like scroll tracker to highlight the active section.
-- Theme switching uses `next-themes` with class-based toggling to avoid layout shifts.
+- The site uses a fixed light theme with no dark mode support.
 
 ## Data flow
 - Content source: Markdown files with frontmatter titles; headings are slugified by a shared helper (`src/lib/slugify.mjs`), and `collectSections` (`src/lib/sections.ts`) builds the table of contents from the AST passed into `DocsLayout`.

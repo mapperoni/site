@@ -46,7 +46,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        "h-full antialiased light",
+        "h-full antialiased",
         inter.variable,
         lexend.variable,
       )}
