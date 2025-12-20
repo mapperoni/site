@@ -8,7 +8,7 @@ nextjs:
 
 This guide explains how to create your first project so you can start collecting data as quickly as possible. {% .lead %}
 
-We will create a simple "Get It Done" or "Fit It Ticket" program for our neighborhood. It includes a map where users can mark issues, and a form where the user can add more information to their report.
+We will create a simple "Get It Done" or "Fix It Ticket" program for our neighborhood. It includes a map where users can mark issues, and a form where the user can add more information to their report.
 
 ## 1. Log in and create a team
 
@@ -47,4 +47,4 @@ For each layer, add a Description field. Ask the user to describe their submissi
 
 ## 6. Publish and share
 
-When you are ready to start collecting responses, click the Publish button. Make the project publicly visible, and accessible to users with a verified email. To Learn more by reading our docs page on [sharing and privacy](/docs/sharing-and-privacy).
+When you are ready to start collecting responses, click the Publish button. Make the project publicly visible, and accessible to users with a verified email. To learn more, read our docs page on [sharing and privacy](/docs/sharing-and-privacy).

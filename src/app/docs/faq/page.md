@@ -32,7 +32,7 @@ Yes, you should be able to use an `<iframe />` element. Please see our documenta
 
 ## What is collaborative and crowd-sourced mapping?
 
-Asking a bunch of people to mark stuff on a map. It has other names as well
+Collaborative and crowd-sourced mapping involves asking a bunch of people to mark stuff on a map. It has other names as well:
 
 - VGI - Volunteered Geographic Information
 - PPGIS - Public Participation GIS

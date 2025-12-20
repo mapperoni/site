@@ -36,7 +36,7 @@ Here are some of our favorite examples so far:
 
 {% quick-link title="Try the demo" icon="installation" href="https://app.mapperoni.com/t/official/p/demo" description="See a real mapperoni project in action!" /%}
 
-{% quick-link title="Quickstart guide" icon="presets" href="/docs/quickstart" description="Get a up and running in seconds. Zero experience required." /%}
+{% quick-link title="Quickstart guide" icon="presets" href="/docs/quickstart" description="Get up and running in seconds. Zero experience required." /%}
 
 {% quick-link title="Custom deployment" icon="plugins" href="/docs/deployments" description="Run your own instance, on your own domain, for total control." /%}
 

@@ -45,11 +45,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx(
-        "h-full antialiased",
-        inter.variable,
-        lexend.variable,
-      )}
+      className={clsx("h-full antialiased", inter.variable, lexend.variable)}
     >
       <body className="flex min-h-full bg-white">
         <Providers>

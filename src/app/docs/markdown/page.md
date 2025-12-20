@@ -107,4 +107,4 @@ For security, we do not allow you to write plain HTML or CSS.
 
 We support a limited subset of [GitHub Flavored Markdown](https://github.github.com/gfm/), but we do not support all features.
 
-We not plan to implement a "what you see is what you get" (WYSIWYG) editor experience or visual toolbar. Our editor is intentionally simple. Raw markdown is superior!
+We do not plan to implement a "what you see is what you get" (WYSIWYG) editor experience or visual toolbar. Our editor is intentionally simple. Raw markdown is superior!
