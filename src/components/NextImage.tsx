@@ -6,6 +6,7 @@ export function NextImage(props: {
   alt: string;
   width: number;
   height: number;
+  class?: string;
 }) {
   return (
     <Image
@@ -13,6 +14,7 @@ export function NextImage(props: {
       alt={props.alt}
       width={props.width}
       height={props.height}
+      className={props.class}
     >
       {props.children}
     </Image>

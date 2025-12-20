@@ -28,8 +28,8 @@ export const navigation = [
     title: "Compliance",
     links: [
       { title: "Acceptable use policy", href: "/acceptable-use" },
-      { title: "Privacy & data policy", href: "/privacy-policy" },
-      { title: "Terms of service", href: "/terms-of-service" },
+      { title: "Privacy & data policy", href: "/privacy" },
+      { title: "Terms of service", href: "/terms" },
     ],
   },
   {

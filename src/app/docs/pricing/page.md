@@ -12,9 +12,9 @@ Start for free. All plans are billed monthly. Ask for a special discount if you 
 
 {% pricing-tier name="Free" price="$0" features=["3 projects", "1,000 monthly form field submissions", "200 monthly map views", "1 team member", "❌ No map search, analytics, or data export."] highlight=true /%}
 
-{% pricing-tier name="Personal" price="$12" features=["Unlimited projects", "3,000 monthly form field submissions", "1,000 monthly map views", "1 team member", "⭐ Data export (CSV, GeoJSON)", "❌ No map search or analytics."] /%}
+{% pricing-tier name="Personal" price="$12" features=["Unlimited projects", "3,000 monthly form field submissions", "1,000 monthly map views", "1 team member", "✅ Data export (CSV, GeoJSON)", "❌ No map search or analytics."] /%}
 
-{% pricing-tier name="Pro" price="$250" features=["Unlimited projects & form submissions", "20,000 monthly map views", "Unlimited team members", "⭐ 1,000 map search sessions", "⭐ Analytics summaries", "⭐ Team subdomain (myteam.mapperoni.com)", "⭐ Custom domain per project (my-project.com)"] /%}
+{% pricing-tier name="Pro" price="$250" features=["Unlimited projects & form submissions", "20,000 monthly map views", "Unlimited team members", "✅ 1,000 map search sessions", "✅ Analytics summaries", "✅ Team subdomain (myteam.mapperoni.com)", "✅ Custom domain per project (my-project.com)"] /%}
 
 {% pricing-tier name="Custom & Enterprise" price="$899+" features=["Full deployment on the infrastructure of your choice", "Maximize data privacy and control", "Fully re-branded and white-labeled", "Customized to meet your unique needs"] /%}
 
