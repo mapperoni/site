@@ -24,11 +24,11 @@ const lexend = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s - Docs",
+    template: "%s | mapperoni",
     default: "mapperoni",
   },
   description:
-    "Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.",
+    "Enhance your surveys to collect geodata and create collaborative maps. Secure, compliant, hosted in the EU.",
 };
 
 export const viewport: Viewport = {

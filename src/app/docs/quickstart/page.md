@@ -8,7 +8,9 @@ nextjs:
 
 This guide explains how to create your first project so you can start collecting data as quickly as possible. {% .lead %}
 
-We will create a simple "Get It Done" or "Fix It Ticket" program for our neighborhood. It includes a map where users can mark issues, and a form where the user can add more information to their report.
+Imagine you work for the city manager, a neighborhood homeowners association, or a public utility department. You want to create a "Get It Done" or "Fix It Ticket" program for your neighborhood. It should include a map where respondents can mark issues, and a form where the respondents can add more information to their report.
+
+Let's create this with mapperoni.
 
 ## 1. Log in and create a team
 
@@ -18,13 +20,19 @@ You must create a team for yourself. The team is where all your projects will li
 
 ## 2. Create a project
 
-You need a name, so that you can always find your project by URL. For example if you name your project "get-it-done", the url will become: `app.mapperoni.com/t/my-team/p/get-it-done`. Only letters, numbers, dashes and underscores are supported. No spaces or special characters.
+You need a name, so that you can always find your project by URL. For example if you name your project "get-it-done", the url will become:
+
+```
+app.mapperoni.com/t/my-team/p/get-it-done
+```
 
 You can always change the project name. Just beware that changing the name will break any hyperlinks you've shared already.
 
 ## 3. Configure your project
 
-Enter the project editor to customize the Title and Description shown on the Start Page. Edits are saved immediately.
+Enter the project editor. The first thing to edit is the Title and Description of your project. This is the content your respondents will see when they visit your project URL. Your edits are saved immediately.
+
+Your project description supports [markdown](https://mapperoni.com/docs/markdown), which allows you to add headings, hyperlinks, images and more.
 
 ## 4. Add Pages to your project
 
