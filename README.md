@@ -26,7 +26,7 @@ A Markdoc-powered documentation site built with Next.js 16 (App Router) and Tail
 
 ## Search indexing
 
-`pnpm build` runs `scripts/generate-search-data.mjs` before Next's build to create `.generated/search-data.json`. If you add or rename pages, re-run the script (or `pnpm build`) so search stays in sync.
+`pnpm dev` and `pnpm build` run `scripts/generate-search-data.mjs` before Next starts to create `.generated/search-data.json`. If you add or rename pages while the dev server is running, run `pnpm generate:search` so search stays in sync.
 
 ## Requirements
 

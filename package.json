@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate:search": "node scripts/generate-search-data.mjs",
+    "predev": "npm run generate:search",
     "dev": "next dev --webpack",
-    "build": "node scripts/generate-search-data.mjs && next build --webpack",
+    "build": "npm run generate:search && next build --webpack",
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write"
