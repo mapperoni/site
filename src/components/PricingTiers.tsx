@@ -7,11 +7,15 @@ export function PricingTier({
   price,
   features,
   highlight = false,
+  href,
+  cta,
 }: {
   name: string;
-  price: string;
+  price?: string;
   features: string[];
   highlight?: boolean;
+  href?: string;
+  cta?: string;
 }) {
   return (
     <div
@@ -26,9 +30,19 @@ export function PricingTier({
           <h3 className="font-display text-lg font-semibold text-slate-900 dark:text-white">
             {name}
           </h3>
-          <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">
-            {price}
-          </p>
+          {price && (
+            <p className="mt-2 text-2xl font-bold text-slate-900 dark:text-white">
+              {price}
+            </p>
+          )}
+          {href && cta && (
+            <a
+              href={href}
+              className="mt-4 inline-flex text-sm font-semibold text-sky-700 hover:text-sky-900 dark:text-sky-400 dark:hover:text-sky-300"
+            >
+              {cta}
+            </a>
+          )}
         </div>
         <ul className="space-y-2">
           {features.map((feature, index) => (

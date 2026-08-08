@@ -61,9 +61,11 @@ const tags = {
     render: PricingTier,
     attributes: {
       name: { type: String },
-      price: { type: String },
+      price: { type: String, required: false },
       features: { type: Array },
       highlight: { type: Boolean, default: false },
+      href: { type: String, required: false },
+      cta: { type: String, required: false },
     },
   },
 };

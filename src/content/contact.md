@@ -1,3 +1,3 @@
 # Contact
 
-Coming soon - this page will contain contact information.
+Contact us at [support@mapperoni.com](mailto:support@mapperoni.com).
