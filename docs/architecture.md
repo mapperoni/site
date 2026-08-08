@@ -9,7 +9,7 @@ High-level map of how the site is built and what runs where.
 - Routing/navigation metadata is centralized in `src/lib/navigation.ts` and drives the sidebar, breadcrumbs in search results, and prev/next link selection.
 
 ## Rendering model (build vs runtime)
-- Build time: `pnpm build` first runs `scripts/generate-search-data.mjs` to emit `.generated/search-data.json`, then `next build --webpack`. Because pages are static Markdown with no `fetch`/revalidation hooks, Next prerenders them to static assets.
+- Build time: `npm build` first runs `scripts/generate-search-data.mjs` to emit `.generated/search-data.json`, then `next build --webpack`. Because pages are static Markdown with no `fetch`/revalidation hooks, Next prerenders them to static assets.
 - Runtime on the server: effectively a static file host (can be served from Vercel’s edge cache or any CDN). No server data fetching or server actions are executed per request.
 - Runtime on the client: interactive pieces only—theme toggling, search modal, mobile navigation drawer, table of contents scroll tracking, syntax highlighting, and prev/next link resolution. Content itself is already hydrated HTML from the static render.
 

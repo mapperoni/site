@@ -3,7 +3,7 @@
 How search works end-to-end for the documentation site, from index generation to the in-app experience.
 
 ## Build-time indexing pipeline
-- Entrypoint: `scripts/generate-search-data.mjs`, invoked by `pnpm dev` and `pnpm build` before Next starts.
+- Entrypoint: `scripts/generate-search-data.mjs`, invoked by `npm dev` and `npm build` before Next starts.
 - Discovery: scans `src/app/**/page.md` so every Markdoc page becomes searchable.
 - Parsing: uses `@markdoc/markdoc` to walk the AST; frontmatter `title` becomes the page title stored as the first section.
 - Section extraction: collects headings up to level 2 and the paragraphs that follow them. Headings get stable IDs via the shared slugify helper (`src/lib/slugify.mjs`); paragraphs are appended to the most recent section. H3+ content is not indexed.
@@ -22,7 +22,7 @@ How search works end-to-end for the documentation site, from index generation to
 - Navigation: selection pushes a Next.js client-side route. If the target is already active, the dialog closes without redundant navigation.
 
 ## Maintenance checklist
-- After adding or editing docs while the dev server is running, rerun `pnpm generate:search` so the local search index stays current. Both `pnpm dev` and `pnpm build` generate it before Next starts.
+- After adding or editing docs while the dev server is running, rerun `npm generate:search` so the local search index stays current. Both `npm dev` and `npm build` generate it before Next starts.
 - Keep important headings at H1/H2 if you want them indexed; H3/H4 content is currently ignored.
 - If you move content out of `page.md` files, update the generator’s glob in `scripts/generate-search-data.mjs`.
 

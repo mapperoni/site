@@ -5,10 +5,10 @@ A Markdoc-powered documentation site built with Next.js 16 (App Router) and Tail
 
 ## Quick start
 
-- Install dependencies: `pnpm install` (pnpm is recommended; npm/yarn also work).
-- Run the dev server: `pnpm dev` then open http://localhost:3000.
-- Lint/format: `pnpm lint` (Biome) and `pnpm format`.
-- Production build: `pnpm build` then `pnpm start`.
+- Install dependencies: `npm install` (npm is recommended; pnpm/yarn also work).
+- Run the dev server: `npm dev` then open http://localhost:3000.
+- Lint/format: `npm lint` (Biome) and `npm format`.
+- Production build: `npm build` then `npm start`.
 
 ## Project layout
 
@@ -26,13 +26,12 @@ A Markdoc-powered documentation site built with Next.js 16 (App Router) and Tail
 
 ## Search indexing
 
-`pnpm dev` and `pnpm build` run `scripts/generate-search-data.mjs` before Next starts to create `.generated/search-data.json`. If you add or rename pages while the dev server is running, run `pnpm generate:search` so search stays in sync.
+`npm dev` and `npm build` run `scripts/generate-search-data.mjs` before Next starts to create `.generated/search-data.json`. If you add or rename pages while the dev server is running, run `npm generate:search` so search stays in sync.
 
 ## Requirements
 
 - Node 18+ (matches Next.js 16 support matrix).
-- PNPM 8+ recommended; other package managers work but may not respect the `pnpm-lock.yaml`.
 
 ## Deployment
 
-The app is a standard Next.js output. Any platform that supports `next start` will work. Ensure the build step runs `pnpm build` so the search index is generated before serving.
+The app is a standard Next.js output. Any platform that supports `next start` will work. Ensure the build step runs `npm build` so the search index is generated before serving.
