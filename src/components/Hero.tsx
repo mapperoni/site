@@ -1,8 +1,8 @@
+import { EyeIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import HeroBgImage from "@/images/hero-bg.png";
 import HeroBgImageMobile from "@/images/hero-bg-mobile.png";
-import { EyeIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
 
 export function Hero() {
   return (

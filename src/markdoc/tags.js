@@ -1,7 +1,7 @@
 import { Callout } from "@/components/Callout";
-import { QuickLink, QuickLinks } from "@/components/QuickLinks";
-import { PricingTier, PricingTiers } from "@/components/PricingTiers";
 import { NextImage } from "@/components/NextImage";
+import { PricingTier, PricingTiers } from "@/components/PricingTiers";
+import { QuickLink, QuickLinks } from "@/components/QuickLinks";
 
 const tags = {
   callout: {

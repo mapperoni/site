@@ -18,7 +18,7 @@ function findPages(dir, base = dir) {
 
     if (entry.isDirectory()) {
       files.push(...findPages(entryPath, base));
-    } else if (entry.name === "page.md") {
+    } else if (entry.name.endsWith(".md")) {
       files.push(path.relative(base, entryPath));
     }
   }
@@ -59,13 +59,12 @@ function extractSections(node, sections, isRoot = true) {
 }
 
 function generateSearchData() {
-  const pagesDir = path.resolve("./src/app");
-  const files = findPages(pagesDir);
+  const contentDir = path.resolve("./src/content");
+  const files = findPages(contentDir);
 
   const data = files.map((file) => {
-    const url =
-      file === "page.md" ? "/" : `/${file.replace(/\/page\.md$/, "")}`;
-    const md = fs.readFileSync(path.join(pagesDir, file), "utf8");
+    const url = file === "index.md" ? "/" : `/${file.replace(/\.md$/, "")}`;
+    const md = fs.readFileSync(path.join(contentDir, file), "utf8");
 
     const ast = Markdoc.parse(md);
     const title =

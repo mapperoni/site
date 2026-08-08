@@ -42,6 +42,7 @@ function CloseOnNavigation({ close }: { close: () => void }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: close the navigation after every URL update.
   useEffect(() => {
     close();
   }, [pathname, searchParams, close]);
