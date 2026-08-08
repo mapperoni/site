@@ -18,6 +18,7 @@ export const navigation = [
         href: "/docs/conditional-questions",
       },
       { title: "Maps & layers", href: "/docs/maps" },
+      { title: "Export data", href: "/docs/export-data" },
     ],
   },
   {

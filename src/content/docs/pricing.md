@@ -19,4 +19,11 @@ Start for free. Paid plans are billed monthly. {% .lead %}
 {% pricing-tier name="Custom" features=["Higher usage limits", "Custom website domains", "Self-hosting and enterprise deploys", "Custom branding", "Feature requests and integrations", "Advanced support"] href="mailto:support@mapperoni.com" cta="Contact us" /%}
 
 {% /pricing-tiers %}
-Participants are counted across all projects in a team each month. Team members do not count toward this limit.
+
+Navigate to your {% link href="https://app.mapperoni.com/teams" target="_blank" %}team page{% /link %} and upgrade in seconds with a credit card. {% link href="mailto:support@mapperoni.com" %}Contact us{% /link %} if you need special accommodations, a different payment method, or anything else.
+
+## How billing works
+
+Each started response from someone outside your team counts as one participant. A participant is counted when they click **Start** and move beyond your project's Start page, even if they do not finish.
+
+Team members can test a project without counting toward the limit. Participant limits are shared across all projects in a team and reset each month.

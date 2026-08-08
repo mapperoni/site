@@ -53,6 +53,21 @@ const tags = {
       href: { type: String },
     },
   },
+  link: {
+    render: ({ children, href, target }) => (
+      <a
+        href={href}
+        target={target}
+        rel={target === "_blank" ? "noreferrer" : undefined}
+      >
+        {children}
+      </a>
+    ),
+    attributes: {
+      href: { type: String, required: true },
+      target: { type: String, required: false },
+    },
+  },
   "pricing-tiers": {
     render: PricingTiers,
   },

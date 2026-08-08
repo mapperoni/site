@@ -15,6 +15,7 @@ const routes = [
   "/docs/pricing",
   "/docs/deployments",
   "/docs/maps",
+  "/docs/export-data",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
