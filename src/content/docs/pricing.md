@@ -22,8 +22,10 @@ Start for free. Paid plans are billed monthly. {% .lead %}
 
 Navigate to your {% link href="https://app.mapperoni.com/teams" target="_blank" %}team page{% /link %} and upgrade in seconds with a credit card. {% link href="mailto:support@mapperoni.com" %}Contact us{% /link %} if you need special accommodations, a different payment method, or anything else.
 
-## How billing works
+**How participants are counted**
 
-Each started response from someone outside your team counts as one participant. A participant is counted when they click **Start** and move beyond your project's Start page, even if they do not finish.
+Participant limits are shared across all projects in a team and reset each billing period. A participant is counted when a respondent clicks **Start** and navigates beyond your project's Start page. If they refreshes the page, or close their browser and return at a later date, they are not double-counted.
 
-Team members can test a project without counting toward the limit. Participant limits are shared across all projects in a team and reset each month.
+However, if a user finishes and starts a new response, this is counted as another participant (even if it's the same individual on the same device).
+
+If you are logged in and responding to your own project, you are not counted. That way, you can test and preview your project freely without counting toward the limit.
