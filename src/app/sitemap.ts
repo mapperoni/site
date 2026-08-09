@@ -10,7 +10,6 @@ const routes = [
   "/privacy",
   "/terms",
   "/docs/quickstart",
-  "/docs/faq",
   "/docs/conditional-questions",
   "/docs/pricing",
   "/docs/deployments",
