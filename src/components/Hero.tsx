@@ -38,6 +38,7 @@ export function Hero() {
         <Image
           src={HeroBgImage}
           alt=""
+          fetchPriority="high"
           placeholder="blur"
           className="hidden sm:block sm:absolute right-0 top-0 opacity-40 xl:opacity-80 object-cover object-right h-full w-auto blur-[2px]"
         />
@@ -45,7 +46,6 @@ export function Hero() {
           src={HeroBgImageMobile}
           alt=""
           fetchPriority="high"
-          loading="eager"
           placeholder="blur"
           className="absolute sm:hidden right-0 bottom-0 opacity-40 object-cover object-right h-full w-auto blur-[2px]"
         />
