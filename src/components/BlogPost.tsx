@@ -18,7 +18,7 @@ export function BlogPost({
   const wasUpdated = frontmatter.updatedAt !== frontmatter.publishedAt;
 
   return (
-    <main className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <div className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <article>
         <header className="border-b border-slate-200 pb-10 sm:pb-12">
           {frontmatter.image && (
@@ -67,6 +67,6 @@ export function BlogPost({
         </header>
         <Prose className="mt-10 sm:mt-12">{children}</Prose>
       </article>
-    </main>
+    </div>
   );
 }

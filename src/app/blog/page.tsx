@@ -40,9 +40,9 @@ export default async function BlogPage() {
   const posts = await getBlogPosts();
 
   return (
-    <main className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <div className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
       <header className="max-w-2xl">
-        <p className="font-display text-sm font-medium text-sky-500">
+        <p className="font-display text-sm font-medium text-sky-700">
           Mapperoni
         </p>
         <h1 className="mt-3 font-display text-4xl tracking-tight text-slate-900 sm:text-5xl">
@@ -85,6 +85,6 @@ export default async function BlogPage() {
           </article>
         ))}
       </div>
-    </main>
+    </div>
   );
 }
