@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 
 import { Layout } from "@/components/Layout";
 import clsx from "@/lib/clsx";
@@ -56,6 +57,13 @@ export default function RootLayout({
     >
       <body className="flex min-h-full bg-white">
         <Layout>{children}</Layout>
+        <Script
+          async
+          src="https://plausible.io/js/pa-sVKn1Ip27gPPiDSQ7yhE0.js"
+        />
+        <Script id="plausible-init">
+          {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
+        </Script>
       </body>
     </html>
   );
