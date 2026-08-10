@@ -8,7 +8,7 @@ nextjs:
 
 A simple and easy way to style pages and text in your mapperoni project. {% .lead %}
 
-## What is it?
+## What is Markdown?
 
 Markdown allows you to write simple plain text that our system automatically converts to beautiful webpages. Markdown is extremely easy to learn, and is a standard syntax that is supported by many platforms like Notion and GitHub.
 

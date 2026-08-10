@@ -16,7 +16,7 @@ The cost depends on how much customization you need. The basic deployment includ
 
 This is typically suitable for most organizations, but we can also scale to meet the needs of large scale Enterprise customers.
 
-Contact us & let's start planning your deployment!
+[Contact us](mailto:support@mapperoni.com) & let's start planning your deployment!
 
 ## Why custom deployments?
 

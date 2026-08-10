@@ -1,17 +1,18 @@
 ---
-title: What is it?
+title: What is Mapperoni?
 ---
 
-A form-builder and survey tool that also enables the collection of crowd-sourced map data. {% .lead %}
+A form-builder and survey tool that also enables the collection of spatial data through collaborative maps. {% .lead %}
+
+Quickly create shareable survey forms for any purpose. Get started for free.
 
 ## Key features
 
-- Secure, private & compliant. Hosted in the EU.
-- Simple but customizable. Conditional questions, markdown formatting, privacy controls and more.
-- Mapping powers. Invite your audience to draw points, lines and polygons.
-- Portable data. Easily export to CSV and GeoJSON.
-- Full control. Manage privacy, visibility, access, and data retention.
-- Invite your team members to edit and manage your project together.
+- Design the perfect survey with conditional logic, privacy and access controls, and form field validation.
+- Secure, private & compliant. Hosted in the EU  🇪🇺.
+- Mapping powers. Invite your respondents to draw on a map with points, lines and polygons.
+- Portable data. Easily export responses to CSV and GeoJSON.
+- Collaborative. Invite your team members to edit and manage your project together.
 
 ## Who is it for?
 
@@ -67,15 +68,15 @@ Collaborative and crowd-sourced mapping involves asking a bunch of people to mar
 - Community Mapping
 - Multiplayer Mapping
 
----
+## Get Started
 
 {% quick-links %}
 
-{% quick-link title="Try the demo" icon="installation" href="https://app.mapperoni.com/t/official/p/demo" description="See a real mapperoni project in action!" /%}
+{% quick-link title="Login" icon="plugins" href="https://app.mapperoni.com/teams" description="Create a shareable project and start collecting responses immediately." /%}
+
+{% quick-link title="See the demo" icon="installation" href="https://app.mapperoni.com/t/official/p/demo" description="Click around a real Mapperoni project!" /%}
 
 {% quick-link title="Quickstart guide" icon="presets" href="/docs/quickstart" description="Get up and running in seconds. Zero experience required." /%}
-
-{% quick-link title="Custom deployment" icon="plugins" href="/docs/deployments" description="Run your own instance, on your own domain, for total control." /%}
 
 {% quick-link title="Pricing" icon="theming" href="/docs/pricing" description="Free to start, affordable to grow. Special discounts for projects we like." /%}
 

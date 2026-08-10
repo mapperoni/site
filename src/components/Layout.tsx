@@ -9,6 +9,7 @@ import { Logo } from "@/components/Logo";
 import { MobileNavigation } from "@/components/MobileNavigation";
 import { Navigation } from "@/components/Navigation";
 import { Search } from "@/components/Search";
+import { RssIcon } from "@heroicons/react/24/outline";
 
 function Header() {
   return (
@@ -28,9 +29,9 @@ function Header() {
         <div className="relative flex basis-0 items-center justify-end gap-5 md:grow">
           <Link
             href="/blog"
-            className="hidden text-sm font-medium text-slate-600 hover:text-sky-600 sm:block"
+            className="hidden text-sm font-bold text-slate-600 hover:text-sky-600 sm:flex gap-1 items-center"
           >
-            Blog
+            <RssIcon className="size-4" /> Blog
           </Link>
           <Button href="https://app.mapperoni.com/" variant="primary">
             Login
