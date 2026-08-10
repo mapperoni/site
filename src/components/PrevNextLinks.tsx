@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 import clsx from "@/lib/clsx";
 import { navigation } from "@/lib/navigation";
@@ -50,10 +47,9 @@ function PageLink({
   );
 }
 
-export function PrevNextLinks() {
-  const pathname = usePathname();
+export function PrevNextLinks({ activePath }: { activePath?: string }) {
   const allLinks = navigation.flatMap((section) => section.links);
-  const linkIndex = allLinks.findIndex((link) => link.href === pathname);
+  const linkIndex = allLinks.findIndex((link) => link.href === activePath);
   const previousPage = linkIndex > -1 ? allLinks[linkIndex - 1] : null;
   const nextPage = linkIndex > -1 ? allLinks[linkIndex + 1] : null;
 

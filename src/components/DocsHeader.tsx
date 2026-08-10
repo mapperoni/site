@@ -1,13 +1,14 @@
-"use client";
-
-import { usePathname } from "next/navigation";
-
 import { navigation } from "@/lib/navigation";
 
-export function DocsHeader({ title }: { title?: string }) {
-  const pathname = usePathname();
+export function DocsHeader({
+  title,
+  activePath,
+}: {
+  title?: string;
+  activePath?: string;
+}) {
   const section = navigation.find((section) =>
-    section.links.find((link) => link.href === pathname),
+    section.links.find((link) => link.href === activePath),
   );
 
   if (!title && !section) {

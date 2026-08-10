@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
-import { Providers } from "@/app/providers";
 import { Layout } from "@/components/Layout";
 import clsx from "@/lib/clsx";
 
@@ -56,9 +55,7 @@ export default function RootLayout({
       className={clsx("h-full antialiased", inter.variable, lexend.variable)}
     >
       <body className="flex min-h-full bg-white">
-        <Providers>
-          <Layout>{children}</Layout>
-        </Providers>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );

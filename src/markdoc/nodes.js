@@ -17,6 +17,7 @@ const nodes = {
       return new Tag(
         this.render,
         {
+          activePath: config.activePath,
           frontmatter: load(node.attributes.frontmatter),
           nodes: node.children,
         },

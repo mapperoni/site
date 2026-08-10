@@ -6,7 +6,7 @@ import HeroBgImageMobile from "@/images/hero-bg-mobile.png";
 
 export function Hero() {
   return (
-    <div className="overflow-hidden bg-gray-100">
+    <div className="overflow-hidden bg-[#f6f6f6]">
       <div className="py-8 lg:py-16 sm:px-2 lg:px-0 relative">
         <div className="mx-auto grid max-w-8xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:max-w-8xl lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12 relative">
           <div className="relative z-10 md:text-center lg:text-left">

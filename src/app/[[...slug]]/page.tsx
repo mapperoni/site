@@ -9,6 +9,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import * as React from "react";
 
+import { Hero } from "@/components/Hero";
 import nodes from "@/markdoc/nodes";
 import tags from "@/markdoc/tags";
 
@@ -88,8 +89,14 @@ export async function generateMetadata({
 export default async function Page({ params }: PageProps) {
   const { slug } = await params;
   const { ast, source } = await getPage(slug);
-  const config = { nodes, tags, source } as unknown as Config;
+  const activePath = slug?.length ? `/${slug.join("/")}` : "/";
+  const config = { nodes, tags, source, activePath } as unknown as Config;
   const content = Markdoc.transform(ast, config) as RenderableTreeNodes;
 
-  return Markdoc.renderers.react(content, React);
+  return (
+    <>
+      {activePath === "/" && <Hero />}
+      {Markdoc.renderers.react(content, React)}
+    </>
+  );
 }
