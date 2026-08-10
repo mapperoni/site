@@ -1,15 +1,16 @@
 ---
 title: What is Mapperoni?
-description: Build secure geospatial surveys, collect map-based responses, and create collaborative maps with Mapperoni.
+metaTitle: Mapperoni
+description: Collect data through collaborative maps and user-friendly survey forms.
 ---
 
-A form-builder and survey tool that also enables the collection of spatial data through collaborative maps. {% .lead %}
+A tool for creating and sharing survey forms and collaborative maps. {% .lead %}
 
-Quickly create shareable survey forms for any purpose. Get started for free.
+Use Mapperoni to create a unique, shareable webpage that can include form fields, maps, media and more. Get started in seconds, for free.
 
 ## Key features
 
-- Design the perfect survey with conditional logic, privacy and access controls, and form field validation.
+- Design the perfect survey with advanced settings like conditional logic, privacy and access control, and form field validation.
 - Secure, private & compliant. Hosted in the EU  🇪🇺.
 - Mapping powers. Invite your respondents to draw on a map with points, lines and polygons.
 - Portable data. Easily export responses to CSV and GeoJSON.

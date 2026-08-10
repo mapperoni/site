@@ -7,6 +7,7 @@ const contentDirectory = path.join(process.cwd(), "src/content");
 
 export type PageFrontmatter = {
   title: string;
+  metaTitle?: string;
   description: string;
 };
 
@@ -40,7 +41,7 @@ function parseFrontmatter(
     throw new Error(`Missing frontmatter in page "${pathname}"`);
   }
 
-  const { title, description } = parsed as Record<string, unknown>;
+  const { title, metaTitle, description } = parsed as Record<string, unknown>;
 
   if (
     typeof title !== "string" ||
@@ -53,7 +54,14 @@ function parseFrontmatter(
     );
   }
 
-  return { title, description };
+  if (
+    metaTitle !== undefined &&
+    (typeof metaTitle !== "string" || metaTitle.trim() === "")
+  ) {
+    throw new Error(`metaTitle must be non-empty text in page "${pathname}"`);
+  }
+
+  return { title, metaTitle, description };
 }
 
 export function pathnameFromSlug(slug: string[] = []) {

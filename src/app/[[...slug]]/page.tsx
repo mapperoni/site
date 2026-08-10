@@ -43,9 +43,12 @@ export async function generateMetadata({
   const { frontmatter } = await getPage(slug);
   const pathname = pathnameFromSlug(slug);
   const socialImage = "/social-image";
+  const isHomePage = pathname === "/";
+  const pageTitle = frontmatter.metaTitle ?? frontmatter.title;
+  const title = isHomePage ? { absolute: pageTitle } : pageTitle;
 
   return {
-    title: frontmatter.title,
+    title,
     description: frontmatter.description,
     alternates: {
       canonical: pathname,
@@ -55,7 +58,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: "website",
-      title: frontmatter.title,
+      title: pageTitle,
       description: frontmatter.description,
       url: pathname,
       siteName: "Mapperoni",
@@ -71,7 +74,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: frontmatter.title,
+      title: pageTitle,
       description: frontmatter.description,
       images: [
         {
