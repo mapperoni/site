@@ -2,7 +2,6 @@ import { EyeIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { Button } from "@/components/Button";
 import HeroBgImage from "@/images/hero-bg.png";
-import HeroBgImageMobile from "@/images/hero-bg-mobile.png";
 
 export function Hero() {
   return (
@@ -39,15 +38,9 @@ export function Hero() {
           src={HeroBgImage}
           alt=""
           fetchPriority="high"
+          loading="eager"
           placeholder="blur"
-          className="hidden sm:block sm:absolute right-0 top-0 opacity-40 xl:opacity-80 object-cover object-right h-full w-auto blur-[2px]"
-        />
-        <Image
-          src={HeroBgImageMobile}
-          alt=""
-          fetchPriority="high"
-          placeholder="blur"
-          className="absolute sm:hidden right-0 bottom-0 opacity-40 object-cover object-right h-full w-auto blur-[2px]"
+          className="absolute right-0 top-0 h-full w-auto object-cover object-right opacity-40 blur-[2px] xl:opacity-80"
         />
       </div>
     </div>

@@ -12,7 +12,7 @@ function Header() {
         <div className="flex lg:hidden">
           <MobileNavigation />
         </div>
-        <div className="relative flex grow basis-0 items-center">
+        <div className="relative flex grow items-center">
           <Link href="/" aria-label="Home page">
             <Logo className="h-8 w-auto" />
           </Link>
@@ -20,7 +20,7 @@ function Header() {
         <div>
           <Search />
         </div>
-        <div className="relative flex basis-0 items-center justify-end gap-5 md:grow">
+        <div className="relative flex items-center justify-end gap-5 md:grow">
           <Link
             href="/blog"
             className="hidden text-sm font-bold text-slate-600 hover:text-sky-600 sm:flex gap-1 items-center"
@@ -28,7 +28,7 @@ function Header() {
             <RssIcon className="size-4" /> Blog
           </Link>
           <Button href="https://app.mapperoni.com/" variant="primary">
-            Log in to Mapperoni
+            Log in
           </Button>
         </div>
       </div>

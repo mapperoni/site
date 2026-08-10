@@ -72,7 +72,7 @@ Collaborative and crowd-sourced mapping involves asking a bunch of people to mar
 
 {% quick-links %}
 
-{% quick-link title="Log in to Mapperoni" icon="plugins" href="https://app.mapperoni.com/" description="Create a shareable project and start collecting responses immediately." /%}
+{% quick-link title="Log in" icon="plugins" href="https://app.mapperoni.com/" description="Create a shareable project and start collecting responses immediately." /%}
 
 {% quick-link title="See the demo" icon="installation" href="https://app.mapperoni.com/t/official/p/demo" description="Click around a real Mapperoni project!" /%}
 
