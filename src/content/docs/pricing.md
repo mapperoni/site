@@ -1,9 +1,6 @@
 ---
 title: Pricing
-nextjs:
-  metadata:
-    title: Pricing
-    description: Free to start, affordable to grow.
+description: Compare Mapperoni plans for geospatial surveys and collaborative mapping, from free projects to custom deployments.
 ---
 
 Start for free. Paid plans are billed monthly. {% .lead %}

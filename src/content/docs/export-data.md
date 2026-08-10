@@ -1,9 +1,6 @@
 ---
 title: Export data
-nextjs:
-  metadata:
-    title: Export data
-    description: Download your project's responses and map data.
+description: Export responses and map data from your Mapperoni project for use in spreadsheets and GIS software.
 ---
 
 Download your project's responses and map data as CSV files whenever you need them. {% .lead %}

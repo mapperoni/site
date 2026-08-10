@@ -1,9 +1,6 @@
 ---
 title: Custom deployments
-nextjs:
-  metadata:
-    title: Custom deployments
-    description: Learn how to deploy your own white-label instance of mapperoni for total control of data and branding.
+description: Deploy a white-label Mapperoni instance for greater control over your data, infrastructure, and branding.
 ---
 
 Mapperoni is designed to be self-hosted, easily white-labeled, and totally self-contained. 

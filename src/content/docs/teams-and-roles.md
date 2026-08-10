@@ -1,9 +1,6 @@
 ---
 title: Teams and roles
-nextjs:
-  metadata:
-    title: Teams and roles
-    description: Organize projects into teams and control who can make changes.
+description: Organize Mapperoni projects into teams and use roles to control who can view, edit, and manage them.
 ---
 
 Teams keep your projects and the people working on them in one place. Roles let you decide who can make changes. {% .lead %}

@@ -1,9 +1,6 @@
 ---
 title: Acceptable Use Policy
-nextjs:
-  metadata:
-    title: Acceptable Use Policy
-    description: By using our platform, you agree to comply with this policy.
+description: Review the rules for permitted and prohibited use of the Mapperoni platform and services.
 ---
 
 This Acceptable Use Policy ("AUP") governs your use of Mapperoni and related services. By using our platform, you agree to comply with this policy.

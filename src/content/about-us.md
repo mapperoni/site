@@ -1,9 +1,6 @@
 ---
 title: About Us
-nextjs:
-  metadata:
-    title: About Us
-    description: Learn about our team and company
+description: Learn about Mapperoni's independent team, mission, values, and approach to building useful mapping software.
 ---
 
 Mapperoni is fully founder-owned, with no venture capital, debt, or shareholders.
@@ -17,7 +14,7 @@ Our goals:
 - To stay close with the professionals who use our products, and make sure they have the most positive experience possible.
 - To ensure we never expose our users to the things we hate: dark patterns, spam, distractions, buzzwords, ads, and bugs.
 
-# History
+## History
 
 Mapperoni, formerly known as canvis.app, was created in 2018 because the founder was struggling to find the right tool to use for his Master's Thesis project.
 

@@ -1,9 +1,6 @@
 ---
 title: Privacy Policy
-nextjs:
-  metadata:
-    title: Privacy Policy
-    description: By using our platform, you agree to comply with this policy.
+description: Learn how Mapperoni collects, uses, stores, and protects personal information when you use our services.
 ---
 
 This Privacy Policy explains how Mapperoni ("we," "us," or "our") collects, uses, and protects your information when you use our platform and services.

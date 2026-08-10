@@ -25,13 +25,12 @@ const lexend = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mapperoni.com"),
   title: {
-    template: "%s | mapperoni",
-    default: "mapperoni",
+    template: "%s | Mapperoni",
+    default: "Mapperoni",
   },
   description:
     "Enhance your surveys to collect geodata and create collaborative maps. Secure, compliant, hosted in the EU.",
   alternates: {
-    canonical: "/",
     types: {
       "application/rss+xml": "/blog/rss.xml",
     },
@@ -45,6 +44,8 @@ export const viewport: Viewport = {
   colorScheme: "light",
 };
 
+const isProductionDeployment = process.env.VERCEL_ENV === "production";
+
 export default function RootLayout({
   children,
 }: {
@@ -57,13 +58,17 @@ export default function RootLayout({
     >
       <body className="flex min-h-full bg-white">
         <Layout>{children}</Layout>
-        <Script
-          async
-          src="https://plausible.io/js/pa-sVKn1Ip27gPPiDSQ7yhE0.js"
-        />
-        <Script id="plausible-init">
-          {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
-        </Script>
+        {isProductionDeployment && (
+          <>
+            <Script
+              async
+              src="https://plausible.io/js/pa-sVKn1Ip27gPPiDSQ7yhE0.js"
+            />
+            <Script id="plausible-init">
+              {`window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

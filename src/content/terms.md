@@ -1,9 +1,6 @@
 ---
 title: Terms of Service
-nextjs:
-  metadata:
-    title: Terms of Service
-    description: By using our platform, you agree to comply with these terms.
+description: Review the terms that govern access to and use of the Mapperoni platform and related services.
 ---
 
 These Terms of Service ("Terms") govern your use of Mapperoni and related services ("Service") provided by Canvis Software LLC ("we," "us," or "our"). By using our Service, you agree to these Terms.

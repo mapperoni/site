@@ -1,9 +1,6 @@
 ---
 title: Sharing and privacy
-nextjs:
-  metadata:
-    title: Sharing and privacy
-    description: Manage who has access to your project, and who can contribute.
+description: Control who can discover, view, and contribute responses to your Mapperoni project.
 ---
 
 Manage who can find your project, who can view your project, and who can contribute to it. {% .lead %}
@@ -18,7 +15,7 @@ Mapperoni offers 3 levels of control with regards to sharing and privacy.
 
 All of these settings are found in the _Publish and share_ menu which is found under **Edit Project > Publish**.
 
-{% next-image src="/images/docs/publish-example.png" width=1696 height=1224 alt="Screenshot of the display conditions editor" /%}
+{% next-image src="/images/docs/publish-example.png" width=1696 height=1224 alt="Screenshot of the Mapperoni publish and sharing settings" /%}
 
 ## Project visibility
 

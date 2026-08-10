@@ -1,5 +1,6 @@
 ---
 title: What is Mapperoni?
+description: Build secure geospatial surveys, collect map-based responses, and create collaborative maps with Mapperoni.
 ---
 
 A form-builder and survey tool that also enables the collection of spatial data through collaborative maps. {% .lead %}

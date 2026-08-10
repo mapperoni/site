@@ -1,33 +1,19 @@
 import type { MetadataRoute } from "next";
 
 import { getBlogPosts } from "@/lib/blog";
+import { getContentRoutes } from "@/lib/content-pages";
 
 const baseUrl = "https://www.mapperoni.com";
 
-const routes = [
-  "",
-  "/about-us",
-  "/contact",
-  "/acceptable-use",
-  "/privacy",
-  "/terms",
-  "/docs/quickstart",
-  "/docs/teams-and-roles",
-  "/docs/conditional-questions",
-  "/docs/pricing",
-  "/docs/deployments",
-  "/docs/maps",
-  "/docs/export-data",
-];
-
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const lastModified = new Date();
-  const posts = await getBlogPosts();
+  const [routes, posts] = await Promise.all([
+    getContentRoutes(),
+    getBlogPosts(),
+  ]);
 
   return [
-    ...routes.map((path) => ({
-      url: `${baseUrl}${path}`,
-      lastModified,
+    ...routes.map(({ pathname }) => ({
+      url: new URL(pathname, baseUrl).href,
     })),
     {
       url: `${baseUrl}/blog`,

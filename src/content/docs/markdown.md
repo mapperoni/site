@@ -1,9 +1,6 @@
 ---
 title: Markdown Formatting
-nextjs:
-  metadata:
-    title: Markdown Formatting
-    description: Use markdown to customize your project.
+description: Format headings, links, lists, tables, and other project content using Markdown in Mapperoni.
 ---
 
 A simple and easy way to style pages and text in your mapperoni project. {% .lead %}

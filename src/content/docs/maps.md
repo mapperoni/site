@@ -1,9 +1,6 @@
 ---
 title: Maps & layers
-nextjs:
-  metadata:
-    title: Maps & layers
-    description: Guide for how to configure collaborative maps in your mapperoni project.
+description: Configure collaborative maps and layers so respondents can add points, lines, and polygons to your project.
 ---
 
 A map page lets respondents add information to a shared map. Use layers to organize what they can add. {% .lead %}

@@ -1,9 +1,6 @@
 ---
 title: Conditional questions
-nextjs:
-  metadata:
-    title: Conditional questions
-    description: Show and hide content based on conditional logic
+description: Use conditional logic to show or hide survey questions and content based on a respondent's answers.
 ---
 
 {% .lead %} Learn how to show and hide content in your project based on conditional logic {% .lead /%}

@@ -1,9 +1,6 @@
 ---
 title: Quickstart
-nextjs:
-  metadata:
-    title: Quickstart
-    description: Get your first mapperoni project up and running in seconds, and learn the key concepts. Zero experience required.
+description: Create your first Mapperoni project, build a survey, and start collecting map-based responses in minutes.
 ---
 
 This guide explains how to create your first project so you can start collecting data as quickly as possible. {% .lead %}
