@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   description:
     "Enhance your surveys to collect geodata and create collaborative maps. Secure, compliant, hosted in the EU.",
   alternates: {
+    canonical: "/",
     types: {
       "application/rss+xml": "/blog/rss.xml",
     },

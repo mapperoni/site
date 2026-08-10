@@ -1,15 +1,14 @@
 "use client";
 
+import { RssIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { Button } from "@/components/Button";
 import { Hero } from "@/components/Hero";
 import { Logo } from "@/components/Logo";
 import { MobileNavigation } from "@/components/MobileNavigation";
 import { Navigation } from "@/components/Navigation";
 import { Search } from "@/components/Search";
-import { RssIcon } from "@heroicons/react/24/outline";
 
 function Header() {
   return (
