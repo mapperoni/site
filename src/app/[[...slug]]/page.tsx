@@ -28,10 +28,14 @@ async function getContentFiles(
 ): Promise<string[]> {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = await Promise.all(
-    entries.map((entry) => {
-      const entryPath = path.join(directory, entry.name);
-      return entry.isDirectory() ? getContentFiles(entryPath) : entryPath;
-    }),
+    entries
+      .filter(
+        (entry) => directory !== contentDirectory || entry.name !== "blog",
+      )
+      .map((entry) => {
+        const entryPath = path.join(directory, entry.name);
+        return entry.isDirectory() ? getContentFiles(entryPath) : entryPath;
+      }),
   );
 
   return files.flat().filter((file) => file.endsWith(".md"));

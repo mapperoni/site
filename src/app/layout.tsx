@@ -23,12 +23,18 @@ const lexend = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mapperoni.com"),
   title: {
     template: "%s | mapperoni",
     default: "mapperoni",
   },
   description:
     "Enhance your surveys to collect geodata and create collaborative maps. Secure, compliant, hosted in the EU.",
+  alternates: {
+    types: {
+      "application/rss+xml": "/blog/rss.xml",
+    },
+  },
 };
 
 export const viewport: Viewport = {

@@ -10,6 +10,7 @@ export const navigation = [
     title: "Guides & Tutorials",
     links: [
       { title: "Quickstart", href: "/docs/quickstart" },
+      { title: "Teams and roles", href: "/docs/teams-and-roles" },
       { title: "Markdown formatting", href: "/docs/markdown" },
       { title: "Sharing and privacy", href: "/docs/sharing-and-privacy" },
       {
@@ -35,6 +36,7 @@ export const navigation = [
   {
     title: "Company",
     links: [
+      { title: "Blog", href: "/blog" },
       { title: "About us", href: "/about-us" },
       { title: "Contact", href: "/contact" },
     ],

@@ -16,7 +16,7 @@ function findPages(dir, base = dir) {
   for (const entry of entries) {
     const entryPath = path.join(dir, entry.name);
 
-    if (entry.isDirectory()) {
+    if (entry.isDirectory() && entry.name !== "blog") {
       files.push(...findPages(entryPath, base));
     } else if (entry.name.endsWith(".md")) {
       files.push(path.relative(base, entryPath));
