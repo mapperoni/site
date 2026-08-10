@@ -32,7 +32,7 @@ You can always change the project name. Just beware that changing the name will 
 
 Enter the project editor. The first thing to edit is the Title and Description of your project. This is the content your respondents will see when they visit your project URL. Your edits are saved immediately.
 
-Your project description supports [markdown](https://mapperoni.com/docs/markdown), which allows you to add headings, hyperlinks, images and more.
+Your project description supports [markdown](https://www.mapperoni.com/docs/markdown), which allows you to add headings, hyperlinks, images and more.
 
 ## 4. Add Pages to your project
 
