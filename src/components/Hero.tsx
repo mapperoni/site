@@ -1,10 +1,21 @@
 import { EyeIcon, PaperAirplaneIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
+import { getImageProps } from "next/image";
 import { Button } from "@/components/Button";
 import HeroBgImage from "@/images/hero-bg.png";
 import HeroBgImageMobile from "@/images/hero-bg-mobile.png";
 
 export function Hero() {
+  const { props: desktopImageProps } = getImageProps({
+    alt: "",
+    sizes: "(min-width: 1280px) 50vw, 100vw",
+    src: HeroBgImage,
+  });
+  const { props: mobileImageProps } = getImageProps({
+    alt: "",
+    sizes: "100vw",
+    src: HeroBgImageMobile,
+  });
+
   return (
     <div className="overflow-hidden bg-gray-100">
       <div className="py-8 lg:py-16 sm:px-2 lg:px-0 relative">
@@ -35,20 +46,20 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <Image
-          src={HeroBgImage}
-          alt=""
-          preload={true}
-          placeholder="blur"
-          className="hidden sm:block sm:absolute right-0 top-0 opacity-40 xl:opacity-80 object-cover object-right h-full w-auto blur-[2px]"
-        />
-        <Image
-          src={HeroBgImageMobile}
-          alt=""
-          preload={true}
-          placeholder="blur"
-          className="absolute sm:hidden right-0 bottom-0 opacity-40 object-cover object-right h-full w-auto blur-[2px]"
-        />
+        <picture>
+          <source
+            media="(min-width: 640px)"
+            sizes={desktopImageProps.sizes}
+            srcSet={desktopImageProps.srcSet}
+          />
+          <img
+            {...mobileImageProps}
+            alt=""
+            fetchPriority="high"
+            loading="eager"
+            className="absolute right-0 bottom-0 h-full w-auto object-cover object-right opacity-40 blur-[2px] sm:top-0 sm:bottom-auto xl:opacity-80"
+          />
+        </picture>
       </div>
     </div>
   );
