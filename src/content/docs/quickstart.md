@@ -7,7 +7,7 @@ This guide explains how to create your first project so you can start collecting
 
 Imagine you work for the city manager, a neighborhood homeowners association, or a public utility department. You want to create a "Get It Done" or "Fix It Ticket" program for your neighborhood. It should include a map where respondents can mark issues, and a form where the respondents can add more information to their report.
 
-Let's create this with mapperoni.
+Let's build it with Mapperoni.
 
 ## 1. Log in and create a team
 
@@ -42,7 +42,7 @@ Note: The Start Page must always be first, and the Conclusion page must always b
 
 ## 5. Add Fields to your pages
 
-We want to collect emails so we can respond directly to the users who submit a Get It Done ticket. For this, add an Email field to the Basic Page.
+We want to collect email addresses so we can respond directly to the users who submit a Get It Done ticket. For this, add an Email field to the Basic Page.
 
 We also need to add some layers to our map. Layers are a way of categorizing and structuring the map data that our users submit.
 

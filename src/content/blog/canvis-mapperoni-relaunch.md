@@ -11,7 +11,7 @@ imageAlt: Canvis logo
 
 Mapperoni is a complete rebuild of the Canvis.app platform, and the culmination of everything I've learned in the 8 years since I first built Canvis.app. Canvis was always a very simple, minimal, and imperfect web app, which makes me even more proud that so many people have continued to use it over the years. I've watched countless companies, charities, NGOs, universities and individuals, from every continent, use Canvis to gather data on fascinating and important topics.
 
-I'm privileged to have the time and support to work on a product that has a genuine positive impact on both people and planet.
+I'm privileged to have the time and support to work on a product that has a genuine positive impact on both people and the planet.
 
 Unfortunately I can't maintain two platforms at once. This means **Canvis.app will be shut down, with a tentative shutdown date set for 6 months from now (February 9th, 2027)**. Development on Mapperoni will continue at a much faster pace, with a much higher standard for quality and much more functionality than Canvis ever had.
 
@@ -41,7 +41,7 @@ Mapperoni is launching with all the settings and configurations that modern web 
 - Add conditional logic to show and hide content based on prior responses.
 - Constrain responses with minimum values, maximum values, value ranges, required questions and more.
 
-### Role based access for teams and organizations
+### Role-based access for teams and organizations
 
 Mapperoni now organizes all projects into 'Teams', so you can create a team and invite your colleagues to collaborate on all your team's projects together. For security, Mapperoni offers a simple Role system (viewer, editor, owner), so you can keep tight control of who can perform the more sensitive or destructive actions. You can learn more about it on our docs.
 
@@ -53,13 +53,13 @@ Add, edit, delete, or reorder pages, layers, and fields, and your teammates will
 
 ### Lower price
 
-Even with all these new features, I've lowered prices, making it one of the most affordable survey tools on the internet today. We are launching with 3 pricing tiers Starter (free), Personal, and Pro, and an extremely simple pricing model.
+Even with all these new features, I've lowered prices, making it one of the most affordable survey tools on the internet today. We are launching with three pricing tiers: Starter (free), Personal, and Pro, with an extremely simple pricing model.
 
 The Free and Personal tiers should be sufficient for students and individuals doing small projects with a generous number of participants per month. The Pro tier increases the participant limit even further, and also allows you to invite and collaborate with additional team members. That's it. No feature paywalls, no ads, no surprises.
 
-If you reach your participant limit earlier than expected, we give you time to upgrade so your project won't be disrupted immediately. If you need something even larger, bespoke, or have a unique situation, we can offer custom plans too. And as always, we are happy to grant discounts and coupons to any projects and organizations who really inspire us.
+If you reach your participant limit earlier than expected, we give you time to upgrade so your project won't be disrupted immediately. If you need something larger or bespoke, or have a unique situation, we can offer custom plans too. And as always, we are happy to grant discounts and coupons to projects and organizations that really inspire us.
 
-For current pricing see our [pricing page](/docs/pricing);
+For current pricing, see our [pricing page](/docs/pricing).
 
 ## Canvis.app shutdown process
 
@@ -67,7 +67,7 @@ Canvis.app is scheduled to be taken offline and redirected to mapperoni.com on F
 
 ### Migrating canvis.app accounts and projects to Mapperoni
 
-Due to legal and technical constraints, we **cannot offer an automated way to migrate accounts** or projects from the old platform to the new one. I am inviting all canvis.app users to create a new account on mapperoni.com, and to recreate their projects by hand. You will find the new project editor is much easier to use and that it provides much more customization and flexibility, to create projects that weren't possible in canvis.app before.
+Due to legal and technical constraints, we **cannot offer an automated way to migrate accounts** or projects from the old platform to the new one. I am inviting all canvis.app users to create a new account on mapperoni.com, and to recreate their projects by hand. You will find that the new project editor is much easier to use and provides much more customization and flexibility, allowing you to create projects that weren't possible in canvis.app before.
 
 For customers who have a very large number of responses that have already been collected, we may be able to offer a custom migration service to bring that map data. [Contact us](mailto:support@mapperoni.com) if this is a service you are interested in.
 
@@ -82,4 +82,4 @@ Mapperoni has a few key features that are still missing and that I plan to deplo
 
 This encourages me to move slowly and deliberately, to keep things simple, to keep costs down, and to prioritize your feedback first.
 
-So, if you have ideas, concerns, questions or anything else, please reach out directly - [support@mapperoni.com](mailto:support@mapperoni.com)
+So, if you have ideas, concerns, questions, or anything else, please reach out directly at [support@mapperoni.com](mailto:support@mapperoni.com).

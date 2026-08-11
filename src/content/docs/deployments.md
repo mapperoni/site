@@ -11,7 +11,7 @@ The cost depends on how much customization you need. The basic deployment includ
 - Deployed on a private server of your choice (we can help).
 - Regular upgrades alongside mapperoni.com.
 
-This is typically suitable for most organizations, but we can also scale to meet the needs of large scale Enterprise customers.
+This is typically suitable for most organizations, but we can also scale to meet the needs of large-scale enterprise customers.
 
 [Contact us](mailto:support@mapperoni.com) & let's start planning your deployment!
 

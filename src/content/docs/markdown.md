@@ -3,7 +3,7 @@ title: Markdown Formatting
 description: Format headings, links, lists, tables, and other project content using Markdown in Mapperoni.
 ---
 
-A simple and easy way to style pages and text in your mapperoni project. {% .lead %}
+Markdown is a simple and easy way to style pages and text in your Mapperoni project. {% .lead %}
 
 ## What is Markdown?
 
@@ -24,7 +24,7 @@ Use the \# symbol to apply a heading. Heading 1 is the largest and Heading 4 is 
 ### Text formatting
 You can emphasize text with *italics* and **bold**, and include [hyperlinks](https://www.mapperoni.com)
 
-You can also do bullet lists, and numbered lists.  
+You can also create bulleted and numbered lists.
 - First bullet 
 - Second bullet
 1. Item one  
@@ -34,7 +34,7 @@ You can also do bullet lists, and numbered lists.
 ```markdown
 You can emphasize text with *italics* and **bold**, and include [hyperlinks](https://www.mapperoni.com)
 
-You can also do bullet lists, and numbered lists.  
+You can also create bulleted and numbered lists.
 - Item one  
 - Item two  
 1. Item one  
@@ -43,7 +43,7 @@ You can also do bullet lists, and numbered lists.
 
 ### Special elements
 
-Markdown supports Blockquotes, images and tables.
+Markdown supports blockquotes, images, and tables.
 
 > "This is what a block quote looks like" - Michael Scott
 
@@ -51,7 +51,7 @@ Here is an image:
 
 ![The image caption goes here](https://www.mapperoni.com/favicon.ico)
 
-And here is an example of a Table:
+And here is an example of a table:
 
 Column 1 | Column 2 | Column 3
 --- | --- | ---

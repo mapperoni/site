@@ -7,7 +7,7 @@ Manage who can find your project, who can view your project, and who can contrib
 
 ## Summary
 
-Mapperoni offers 3 levels of control with regards to sharing and privacy.
+Mapperoni offers three levels of control for sharing and privacy.
 
 1. **Project Visibility**: Decide if the _project start page_ should be public or not.
 2. **Access Control**: Decide who can continue _beyond the start page_ to view subsequent pages.
@@ -19,7 +19,7 @@ All of these settings are found in the _Publish and share_ menu which is found u
 
 ## Project visibility
 
-The **project visibility** setting controls if the Start Page is visible to the public or not. The two supported options are:
+The **project visibility** setting controls whether the Start Page is visible to the public. The two supported options are:
 
 - Private (team only)
 - Public (anyone with the URL)
@@ -30,7 +30,7 @@ The start page is always the first page you see when you navigate to your projec
 This is the default for all new projects. It prevents users from seeing the Start page unless you have already added them to your team.
 
 - Users who are not logged in will be redirected to the log in screen.
-- Users who are logged in, but not a member of your team, will see a message that says "Unauthorized".
+- Users who are logged in but are not members of your team will see a message that says "Unauthorized".
 
 **Public (anyone with the URL)**  
 This is the recommended setting for most projects. This allows the start page to be indexed by search engines which makes them more easily discoverable. This also allows AI agents and new users to read about your project. Avoid sharing sensitive information (emails, personal information, etc.) on the Start page if it is public.
@@ -53,7 +53,7 @@ Allow everyone who clicks the Start button to continue on to the next page, with
 Force users to log in to their account, which requires that they have an active and verified email.
 
 **Team members only**  
-Force users to log in and require that they are a member of your team. If they are authorized or authenticated, they will see a "403 Access forbidden" error.
+Force users to log in and require that they are a member of your team. If they are authenticated but not authorized, they will see a "403 Access forbidden" error.
 
 ## Contribution control
 
@@ -106,6 +106,6 @@ For editable-submission mode we **strongly** recommend restricting Access contro
 
 ## Drafts & attempts
 
-Respondents can always make revisions to their inputs until they reach the conclusion page. When they reach the conclusion page, their response is considered "submitted". The system tries to preserve incomplete submission attempts so that respondents will not lose their progress if they refresh, disconnect, or close the browser tab. If users are logged-in, they can even continue from another device.
+Respondents can always make revisions to their inputs until they reach the conclusion page. When they reach the conclusion page, their response is considered "submitted". The system tries to preserve incomplete submission attempts so that respondents will not lose their progress if they refresh, disconnect, or close the browser tab. If users are logged in, they can even continue from another device.
 
-If the respondent is not logged in (e.g. for projects with `Access control: Anyone (open access)`) progress may be lost when browser cookies are cleared, blocked or expired.
+If the respondent is not logged in (e.g. for projects with `Access control: Anyone (open access)`), progress may be lost when their browser cookies are cleared, blocked, or expire.
