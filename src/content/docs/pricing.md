@@ -19,7 +19,7 @@ Start for free. Paid plans are billed monthly. {% .lead %}
 
 **How participants are counted**
 
-Participant limits are shared across all projects in a team and reset each billing period. A participant is counted when a respondent clicks **Start** and navigates beyond your project's Start page. If they refreshes the page, or close their browser and return at a later date, they are not double-counted.
+Participant limits are shared across all projects in a team and reset each billing period. A participant is counted when a respondent clicks **Start** and navigates beyond your project's Start page. If they refresh the page, or close their browser and return at a later date, they are not double-counted.
 
 However, if a user finishes and starts a new response, this is counted as another participant (even if it's the same individual on the same device).
 

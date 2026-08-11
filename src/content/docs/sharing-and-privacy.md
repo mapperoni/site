@@ -76,7 +76,7 @@ No new contributions. Field inputs are visible, but disabled.
 
 In single-submission mode, an individual respondent can only create one submission. They are restricted from creating a second submission after they reach the conclusion page.
 
-A prior submission can not be edited or viewed again by the respondent after they reach the conclusion page.
+A prior submission cannot be edited or viewed again by the respondent after they reach the conclusion page.
 
 You can always re-enable access or edits for prior respondents by changing the contribution mode at a later date.
 
@@ -87,7 +87,7 @@ The best way to prevent repeat submissions from the same individual is to set Ac
 **Multi-submission**
 
 In multi-submission mode, the same respondent can create an unlimited number of new submissions.
-A prior submission can not be edited or viewed again by the respondent after they reach the conclusion page.
+A prior submission cannot be edited or viewed again by the respondent after they reach the conclusion page.
 
 - This mode is ideal for accepting multiple responses on shared devices (public computers etc.)
 - If you change your mind and switch to "Editable submission" mode, and you already accepted multiple submissions on the same account or device, only the most recent response can be edited.

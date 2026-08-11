@@ -1,12 +1,12 @@
 ---
 title: What is Mapperoni?
 metaTitle: Mapperoni
-description: Collect data through collaborative maps and user-friendly survey forms.
+description: Collect data through user-friendly survey forms and interactive maps.
 ---
 
-A tool for creating and sharing survey forms and collaborative maps. {% .lead %}
+Mapperoni is a tool for creating user-friendly survey forms. These survey forms can include collaborative maps, so you can invite people to mark and describe spatial data right on the map. {% .lead %}
 
-Use Mapperoni to create a unique, shareable webpage that can include form fields, maps, media and more. Get started in seconds, for free.
+Mapperoni projects are simple, shareable webpages that can include form fields, maps, media and more. You can create and share a project in seconds, for free.
 
 ## Key features
 

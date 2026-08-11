@@ -8,7 +8,7 @@ description: Use conditional logic to show or hide survey questions and content 
 Conditional logic is useful if you want to build personalized and efficient surveys. Here are some examples:
 
 - Ask a follow-up question to a respondent who answered positively.
-- Hide a follow up question to a respondent who answered negatively.
+- Hide a follow-up question to a respondent who answered negatively.
 - Ask a follow-up question if the user left a question blank.
 - Funnel users in Group A to contribute to Map A, and users in Group B to contribute to Map B.
 

@@ -17,7 +17,7 @@ You must create a team for yourself. The team is where all your projects will li
 
 ## 2. Create a project
 
-You need a name, so that you can always find your project by URL. For example if you name your project "get-it-done", the url will become:
+You need a name, so that you can always find your project by URL. For example, if you name your project "get-it-done", the URL will become:
 
 ```
 app.mapperoni.com/t/my-team/p/get-it-done
