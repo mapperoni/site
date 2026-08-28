@@ -30,6 +30,8 @@ export const navigation = [
     links: [
       { title: "Acceptable use policy", href: "/acceptable-use" },
       { title: "Privacy & data policy", href: "/privacy" },
+      { title: "Data processing addendum", href: "/dpa" },
+      { title: "Subprocessors", href: "/subprocessors" },
       { title: "Terms of service", href: "/terms" },
     ],
   },

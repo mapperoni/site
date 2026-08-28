@@ -3,14 +3,14 @@ title: Privacy Policy
 description: Learn how Mapperoni collects, uses, stores, and protects personal information when you use our services.
 ---
 
-This Privacy Policy explains how Mapperoni ("we," "us," or "our") collects, uses, and protects your information when you use our platform and services.
+This Privacy Policy explains how Mapperoni, operated by Canvis Software LLC ("we," "us," or "our"), collects, uses, and protects personal information when you use our platform and services.
 
 ## 1. Who We Are
 
 Mapperoni is a feedback collection platform operated by Canvis Software LLC. For data protection purposes, we act as:
 
 - **Data Controller** for account holders and website visitors
-- **Data Processor** for response data collected through our customers' projects
+- **Data Processor** for Customer Personal Data, including response data collected through customers' projects
 
 **Contact:** privacy@mapperoni.com
 
@@ -43,14 +43,14 @@ Mapperoni is a feedback collection platform operated by Canvis Software LLC. For
 
 ## 4. How We Share Your Information
 
-We never sell your personal information or share your data unless legally required to, or unless necessary to deliver a service.
+We do not sell personal information. We share information with service providers that help us operate the Service, including Hetzner (hosting and encrypted backups), Mailgun (transactional email), Stripe (billing), and Mapbox (mapping). A user's browser connects directly to Mapbox when it loads a map. See our [Subprocessor List](/subprocessors) for the current list and processing purposes.
 
 ## 5. Data Retention
 
-- **Account data:** Retained while your account is active, deleted immediately upon account closure.
-- **Response data:** Retained according to project owner settings; deleted when project is deleted.
-- **Legal holds:** Data may be retained longer if required by law.
-- **Database backups:** Data may persist in encrypted database backups for up to 1 year. This data is inaccessible to employees or users.
+- **Account data:** Retained while your account is active. Account deletion removes the account and authentication tokens. Contributions associated with a deleted account are anonymized rather than deleted where needed to preserve the relevant project's dataset.
+- **Project and response data:** Customer team owners can delete projects or teams, and authorized users can delete individual submissions. Deletion removes applicable active application data; individual submission deletion removes its response and map-feature content and retains a tombstone record.
+- **Database backups:** Encrypted backups may retain deleted data until their normal expiry. The remote backup lifecycle retains up to twelve monthly snapshots, in addition to shorter daily and weekly snapshots.
+- **Legal and operational retention:** We may retain the minimum data needed to comply with law, resolve disputes, enforce agreements, or maintain security.
 
 ## 6. Your Privacy Rights
 
@@ -68,7 +68,7 @@ You have the right to:
 - Withdraw consent at any time
 - Lodge a complaint with your supervisory authority
 
-We process data under the legal bases described in Section 3. International transfers are protected by Standard Contractual Clauses.
+We process personal information for the legal bases described in Section 3. Where we transfer personal information outside the EEA, we use an appropriate transfer mechanism, such as the Standard Contractual Clauses where applicable.
 
 ### California Residents (CCPA/CPRA)
 
@@ -93,23 +93,17 @@ To exercise your rights, contact privacy@mapperoni.com or use account settings.
 
 ## 7. International Data Transfers
 
-We store our database and database backups in Germany. For transfers outside the EEA, we use:
-- Standard Contractual Clauses (SCCs)
-- Adequacy decisions where applicable
+We host the production database and encrypted database backups in Germany. Canvis Software LLC is established in California, and its authorized administrator may access Service data from the United States to operate, support, and secure the Service. For Customer Personal Data, the [DPA](/dpa) incorporates the EU SCCs where they are required for that transfer. Our providers may process data in other locations as described in the [Subprocessor List](/subprocessors).
 
 ## 8. Cookies
 
-We use essential cookies for platform functionality. We do not track users with analytics cookies.
+We use essential cookies for platform functionality. We use Plausible Analytics for lightweight, cookie-free route-visit analytics. It does not host or store Customer project content, form answers, or map data.
 
 Manage preferences in your browser settings.
 
 ## 9. Security
 
-We implement industry-standard security measures including:
-- Encryption in transit (TLS) and at rest
-- Access controls and authentication
-- Regular security assessments
-- Incident response procedures
+We use HTTPS/TLS for the production Service, application authentication and authorization controls, secure production cookies, and encrypted database backups. Details of the measures relevant to Customer Personal Data are in the [DPA](/dpa).
 
 ## 10. Children's Privacy
 
@@ -121,7 +115,7 @@ We may update this policy periodically. We will notify you of material changes v
 
 ## 12. Contact Us
 
-**Privacy Inquiries, DPO & representatives:**
+**Privacy inquiries:**
 privacy@mapperoni.com
 
 ---
@@ -135,4 +129,4 @@ When you collect responses through Mapperoni, you are the Data Controller for th
 - Responding to data subject requests
 - Configuring appropriate data retention
 
-We act as your Data Processor and process response data according to our Data Processing Agreement.
+We act as your Data Processor and process Customer Personal Data according to our [Data Processing Addendum](/dpa). If a respondent contacts us directly about data controlled by you, we will direct or forward the request to you unless law requires us to respond.

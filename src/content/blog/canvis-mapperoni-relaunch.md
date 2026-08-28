@@ -33,7 +33,7 @@ Here are a few of the new features you might appreciate.
 
 ### Sovereign data, stronger EU compliance story
 
-After hearing from so many European customers who have complicated compliance requirements, I decided to host Mapperoni entirely in the EU. All application data (projects, accounts, responses) as well as encrypted backups are stored in Germany (via servers running on Hetzner's German locations), without relying on any other public cloud infrastructure providers.
+After hearing from so many European customers who have complicated compliance requirements, I chose Germany for Mapperoni's primary application database and encrypted backups, using Hetzner's German locations. Our [Privacy Policy](/privacy) and [Subprocessor List](/subprocessors) describe other service providers and the limited U.S. administrative access needed to operate the Service.
 
 ### Better survey forms
 

@@ -39,6 +39,8 @@ When others submit responses to your projects:
 - You must comply with applicable data protection laws
 - We process response data on your behalf as a data processor
 
+If our processing of your content or response data involves Personal Data subject to Applicable Data Protection Law, the [Data Processing Addendum](/dpa) ("DPA") is incorporated into and forms part of these Terms. The DPA governs that processing and controls over these Terms to the extent of a conflict about Personal Data processing.
+
 ## 6. Acceptable Use
 
 You agree to comply with our [Acceptable Use Policy](/acceptable-use). Violations may result in suspension or termination.
@@ -76,7 +78,7 @@ The Service may integrate with third-party services. Your use of third-party ser
 - Fail to pay fees when due
 - Create legal liability or risk to others
 
-**Effect:** Upon termination, your right to use the Service ends. We will delete your data according to our Privacy Policy. Provisions that should survive termination will remain in effect.
+**Effect:** Upon termination, your right to use the Service ends. We handle Customer Personal Data according to the DPA and our Privacy Policy. Provisions that should survive termination will remain in effect.
 
 ## 12. Disclaimers
 
@@ -111,7 +113,7 @@ You agree to indemnify and hold us harmless from claims arising from:
 
 ## 16. General
 
-- **Entire Agreement:** These Terms, along with our Privacy Policy and Acceptable Use Policy, constitute the entire agreement
+- **Entire Agreement:** These Terms, the DPA where applicable, our Privacy Policy, and Acceptable Use Policy constitute the entire agreement
 - **Severability:** If any provision is unenforceable, the remaining provisions remain in effect
 - **Waiver:** Failure to enforce a provision is not a waiver
 - **Assignment:** You may not assign these Terms; we may assign them in connection with a business transfer
