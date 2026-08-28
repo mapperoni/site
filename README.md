@@ -1,6 +1,10 @@
 Mapperoni.com
 ==============
 
+Mapperoni is a tool for creating user-friendly survey forms, public-engagement questionnaires, and collaborative maps. Collect feedback and geospatial data by inviting people to mark and describe locations directly on an interactive map. Learn more at [www.mapperoni.com](https://www.mapperoni.com).
+
+This repository contains the source for the Mapperoni website and documentation site. The Mapperoni application is available at [app.mapperoni.com](https://app.mapperoni.com).
+
 A Markdoc-powered documentation site built with Next.js 16 (App Router) and Tailwind CSS 4. The content lives in Markdown (`page.md`) files under `src/app`, and a small Markdoc schema adds custom components, syntax highlighting, and a FlexSearch-based doc search.
 
 ## License
