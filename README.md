@@ -3,6 +3,10 @@ Mapperoni.com
 
 A Markdoc-powered documentation site built with Next.js 16 (App Router) and Tailwind CSS 4. The content lives in Markdown (`page.md`) files under `src/app`, and a small Markdoc schema adds custom components, syntax highlighting, and a FlexSearch-based doc search.
 
+## License
+
+This repository, including the Mapperoni website and its documentation, is licensed under the [MIT License](LICENSE). This license does not apply to the Mapperoni application or service at [app.mapperoni.com](https://app.mapperoni.com). Use of that application is subject to separately agreed commercial terms or other written arrangements with Canvis Software LLC.
+
 ## Quick start
 
 - Install dependencies: `npm install` (npm is recommended; pnpm/yarn also work).
