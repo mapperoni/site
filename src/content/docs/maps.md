@@ -9,6 +9,10 @@ A map page lets respondents add information to a shared map. Use layers to organ
 
 In the project editor, click **Insert Page** and choose **Map Page**. Then click **Edit Map** on the new page.
 
+The Map Editor shows the page content beside the map. Use the layer panel to add and configure layers, and open **Map Settings** to control the basemap and initial view.
+
+{% next-image src="/images/docs/map-editor.png" width=2048 height=1536 alt="Map Editor showing page content, the map, configured layers, Add Layer, and Map Settings" /%}
+
 ## Add layers
 
 Click **Add Layer** to create a point layer. A layer is a category for pins on the map. For example, someone using mapperoni to create a "Fix Me" survey might add separate layers for _Repairs_, _Cleanups_, or _Other issues_. When someone adds a pin, they choose the layer it belongs to.

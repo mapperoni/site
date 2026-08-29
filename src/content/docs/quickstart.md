@@ -25,15 +25,21 @@ app.mapperoni.com/t/my-team/p/get-it-done
 
 You can always change the project name. Just beware that changing the name will break any hyperlinks you've shared already.
 
+{% next-image src="/images/docs/create-project.png" width=2048 height=1536 alt="Create New Project screen with the project name field and Create button" /%}
+
 ## 3. Configure your project
 
 Enter the project editor. The first thing to edit is the Title and Description of your project. This is the content your respondents will see when they visit your project URL. Your edits are saved immediately.
+
+{% next-image src="/images/docs/project-editor.png" width=2048 height=1536 alt="Project editor showing the Start page, Insert Page button, Conclusion page, and Publish button" /%}
 
 Your project description supports [markdown](https://www.mapperoni.com/docs/markdown), which allows you to add headings, hyperlinks, images and more.
 
 ## 4. Add Pages to your project
 
 Click the "Insert Page" button to add two pages.
+
+{% next-image src="/images/docs/add-page.png" width=2048 height=1536 alt="Add page dialog with Basic page and Map page options" /%}
 
 1. A Basic Page, where we will ask users some basic questions.
 2. A Map Page, where we will ask users to draw on the map.

@@ -13,7 +13,12 @@ export function NextImage(props: {
       width={props.width}
       height={props.height}
       sizes="(min-width: 1024px) 768px, (min-width: 640px) 672px, calc(100vw - 2rem)"
-      style={{ width: "100%", height: "auto", borderRadius: "1.5rem" }}
+      style={{
+        width: "100%",
+        height: "auto",
+        borderRadius: "1.5rem",
+        boxShadow: "0 4px 16px rgb(15 23 42 / 10%)",
+      }}
     />
   );
 }

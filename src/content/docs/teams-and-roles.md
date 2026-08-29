@@ -11,6 +11,8 @@ Every project belongs to one team. Team members can access that team's projects,
 
 Free and Personal teams have one member. Upgrade to Pro to invite up to 25 people. To manage members, open your team and choose **Settings**.
 
+{% next-image src="/images/docs/team-settings.png" width=2048 height=1536 alt="Team Settings screen for inviting members and managing their roles" /%}
+
 ## Roles
 
 Choose the lowest role that gives someone the access they need.
