@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       name: "Mapperoni",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.mapperoni.com/mapperoni-logo.svg",
+        url: "https://www.mapperoni.com/images/brand/mapperoni-logo.png",
       },
     },
     mainEntityOfPage: url,

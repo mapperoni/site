@@ -15,7 +15,7 @@ Mapperoni offers three levels of control for sharing and privacy.
 
 All of these settings are found in the _Publish and share_ menu which is found under **Edit Project > Publish**.
 
-{% next-image src="/images/docs/publish-example.png" width=1696 height=1224 alt="Screenshot of the Mapperoni publish and sharing settings" /%}
+{% next-image src="/images/docs/publish-example.png" width=2048 height=1536 alt="Screenshot of the Mapperoni publish and sharing settings" /%}
 
 ## Project visibility
 

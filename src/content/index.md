@@ -8,7 +8,7 @@ Mapperoni is a tool for creating user-friendly survey forms. These survey forms 
 
 Mapperoni projects are simple, shareable webpages that can include form fields, maps, media and more. You can create and share a project in seconds, for free.
 
-{% next-image src="/images/device_preview.png" width=1536 height=1024 alt="Mapperoni park cleanup request survey displayed on a laptop" /%}
+{% next-image src="/images/device_preview.png" width=1672 height=941 alt="Mapperoni park cleanup request survey displayed on a laptop" /%}
 
 ## Key features
 

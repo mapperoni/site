@@ -4,7 +4,7 @@ import { ImageResponse } from "next/og";
 
 export async function GET() {
   const logo = await readFile(
-    path.join(process.cwd(), "public/mapperoni-logo.png"),
+    path.join(process.cwd(), "public/images/brand/mapperoni-logo.png"),
   );
   const logoUrl = `data:image/png;base64,${logo.toString("base64")}`;
 

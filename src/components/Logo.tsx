@@ -7,16 +7,16 @@ type LogoProps = Omit<
 > & { alt?: string };
 
 const LOGO_WIDTH = 378;
-const LOGO_HEIGHT = 76;
+const LOGO_HEIGHT = 77;
 
 export function Logo({ alt = "Mapperoni", ...props }: LogoProps) {
   return (
     <Image
-      src="/mapperoni-logo.svg"
+      src="/images/brand/mapperoni-logo.png"
       alt={alt}
       width={LOGO_WIDTH}
       height={LOGO_HEIGHT}
-      unoptimized
+      sizes="159px"
       {...props}
     />
   );
