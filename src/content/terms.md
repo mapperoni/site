@@ -3,7 +3,7 @@ title: Terms of Service
 description: Review the terms that govern access to and use of the Mapperoni platform and related services.
 ---
 
-These Terms of Service ("Terms") govern your use of Mapperoni and related services ("Service") provided by Canvis Software LLC ("we," "us," or "our"). By using our Service, you agree to these Terms.
+These Terms of Service ("Terms") govern your use of Mapperoni and related services ("Service"), owned and operated by Canvis Software LLC, a software company based in California ("we," "us," or "our"). By using our Service, you agree to these Terms.
 
 ## 1. Acceptance
 

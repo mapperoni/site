@@ -5,7 +5,7 @@ description: The Data Processing Addendum governing Mapperoni's processing of Cu
 
 **Effective date: August 28, 2026**
 
-This Data Processing Addendum ("DPA") forms part of the [Terms of Service](/terms) (the "Agreement") between Canvis Software LLC, which operates Mapperoni ("Mapperoni," "we," "us," or "Processor"), and the customer accepting the Agreement ("Customer" or "Controller"). It applies only where Mapperoni processes Personal Data on Customer's behalf in providing the Service. The Agreement controls for matters not addressed here; this DPA controls to the extent of a conflict about Processing Customer Personal Data.
+This Data Processing Addendum ("DPA") forms part of the [Terms of Service](/terms) (the "Agreement") between Canvis Software LLC, which owns and operates Mapperoni ("Mapperoni," "we," "us," or "Processor"), and the customer accepting the Agreement ("Customer" or "Controller"). It applies only where Mapperoni processes Personal Data on Customer's behalf in providing the Service. The Agreement controls for matters not addressed here; this DPA controls to the extent of a conflict about Processing Customer Personal Data.
 
 ## 1. Definitions and roles
 
@@ -43,7 +43,7 @@ Mapperoni may add or replace subprocessors by updating that page at least 30 day
 
 ## 7. International transfers
 
-Customer acknowledges that Mapperoni is a California company and its authorized administrator may access Customer Personal Data from the United States to operate, support, and secure the Service, even though the production database and backups are hosted in Germany. Where a transfer of Customer Personal Data from the EEA requires an approved transfer mechanism, the parties incorporate the [European Commission's 2021 Standard Contractual Clauses](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj) ("EU SCCs"), Module Two (Controller to Processor), into this DPA. Transfers from the United Kingdom or Switzerland require the applicable UK or Swiss addendum or another valid transfer mechanism, where required by law.
+Customer acknowledges that Canvis Software LLC is based in California and its authorized administrator may access Customer Personal Data from the United States to operate, support, and secure the Service, even though the production database and backups are hosted in Germany. Where a transfer of Customer Personal Data from the EEA requires an approved transfer mechanism, the parties incorporate the [European Commission's 2021 Standard Contractual Clauses](https://eur-lex.europa.eu/eli/dec_impl/2021/914/oj) ("EU SCCs"), Module Two (Controller to Processor), into this DPA. Transfers from the United Kingdom or Switzerland require the applicable UK or Swiss addendum or another valid transfer mechanism, where required by law.
 
 For the EU SCCs: the Customer is the data exporter; Canvis Software LLC is the data importer; the optional docking clause is not used; general written authorization for subprocessors applies with the notice and objection process in Section 6; the data importer may use the subprocessors in the public list; and the processing and safeguards in Schedules 1 and 2 complete Annexes I and II. The governing law and courts under Clauses 17 and 18 are those of Ireland. The competent supervisory authority is determined under Clause 13 of the EU SCCs. The parties will make reasonable supplementary arrangements if needed for a valid transfer under Applicable Data Protection Law.
 

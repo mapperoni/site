@@ -3,7 +3,7 @@ title: Acceptable Use Policy
 description: Review the rules for permitted and prohibited use of the Mapperoni platform and services.
 ---
 
-This Acceptable Use Policy ("AUP") governs your use of Mapperoni and related services. By using our platform, you agree to comply with this policy.
+This Acceptable Use Policy ("AUP") governs your use of Mapperoni and related services, owned and operated by Canvis Software LLC, a software company based in California ("we," "us," or "our"). By using our platform, you agree to comply with this policy.
 
 ## Permitted Uses
 

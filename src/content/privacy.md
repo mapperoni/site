@@ -3,11 +3,11 @@ title: Privacy Policy
 description: Learn how Mapperoni collects, uses, stores, and protects personal information when you use our services.
 ---
 
-This Privacy Policy explains how Mapperoni, operated by Canvis Software LLC ("we," "us," or "our"), collects, uses, and protects personal information when you use our platform and services.
+This Privacy Policy explains how Canvis Software LLC, a software company based in California that owns and operates Mapperoni ("we," "us," or "our"), collects, uses, and protects personal information when you use our platform and services.
 
 ## 1. Who We Are
 
-Mapperoni is a feedback collection platform operated by Canvis Software LLC. For data protection purposes, we act as:
+Mapperoni is a feedback collection platform owned and operated by Canvis Software LLC. For data protection purposes, Canvis Software LLC acts as:
 
 - **Data Controller** for account holders and website visitors
 - **Data Processor** for Customer Personal Data, including response data collected through customers' projects

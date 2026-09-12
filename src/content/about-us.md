@@ -3,7 +3,7 @@ title: About Us
 description: Learn about Mapperoni's independent team, mission, values, and approach to building useful mapping software.
 ---
 
-Mapperoni is fully founder-owned, with no venture capital, debt, or shareholders.
+Mapperoni is a product owned and operated by Canvis Software LLC, an independently founder-owned software company based in California.
 
 ## Mission & Vision
 

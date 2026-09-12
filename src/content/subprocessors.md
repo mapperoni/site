@@ -5,7 +5,7 @@ description: Approved subprocessors and service providers used to operate Mapper
 
 **Last updated: August 28, 2026**
 
-This page lists the subprocessors authorized under the [Data Processing Addendum](/dpa) to Process Customer Personal Data. Mapperoni may also use the listed providers for its own account, billing, website, and operational data as described below.
+Canvis Software LLC, a software company based in California, owns and operates Mapperoni. This page lists the subprocessors authorized under the [Data Processing Addendum](/dpa) to Process Customer Personal Data. Canvis Software LLC may also use the listed providers for account, billing, website, and operational data as described below.
 
 | Provider | Purpose | Relevant location |
 | --- | --- | --- |
@@ -20,4 +20,4 @@ The following provider does not Process Customer project content, form answers, 
 | --- | --- | --- |
 | Plausible Analytics OÜ | Lightweight, cookie-free website and application route-visit analytics. It receives page-visit and region information. | Provider-managed location; the application configuration does not fix the analytics endpoint. |
 
-Mapperoni will update this page at least 30 days before adding or replacing a subprocessor that Processes Customer Personal Data. The objection process is in Section 6 of the [DPA](/dpa).
+Canvis Software LLC will update this page at least 30 days before adding or replacing a subprocessor that Processes Customer Personal Data. The objection process is in Section 6 of the [DPA](/dpa).

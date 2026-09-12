@@ -41,6 +41,9 @@ export function Navigation({
           </li>
         ))}
       </ul>
+      <p className="mt-9 text-xs text-slate-400 dark:text-slate-500">
+        &copy; {new Date().getFullYear()} Canvis Software LLC
+      </p>
     </nav>
   );
 }
