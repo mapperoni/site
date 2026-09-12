@@ -8,6 +8,7 @@ import {
 } from "@algolia/autocomplete-core";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Fragment, forwardRef, useId, useRef, useState } from "react";
 import Highlighter from "react-highlight-words";
@@ -39,11 +40,15 @@ function SearchResult({
   result,
   autocomplete,
   collection,
+  isActive,
+  onClose,
   query,
 }: {
   result: Result;
   autocomplete: Autocomplete;
   collection: AutocompleteCollection<Result>;
+  isActive: boolean;
+  onClose: () => void;
   query: string;
 }) {
   const id = useId();
@@ -53,55 +58,65 @@ function SearchResult({
   const hierarchy = [sectionTitle, result.pageTitle].filter(
     (item): item is string => typeof item === "string",
   );
+  const itemProps = {
+    ...autocomplete.getItemProps({
+      item: result,
+      source: collection.source,
+    }),
+    "aria-selected": isActive,
+  };
 
   return (
     <li
-      className="group block cursor-default rounded-lg px-3 py-2 aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700/30"
+      className="group block rounded-lg aria-selected:bg-slate-100 dark:aria-selected:bg-slate-700/30"
       aria-labelledby={`${id}-hierarchy ${id}-title`}
-      {...autocomplete.getItemProps({
-        item: result,
-        source: collection.source,
-      })}
+      {...itemProps}
     >
-      <div
-        id={`${id}-title`}
-        aria-hidden="true"
-        className="text-sm text-slate-700 group-aria-selected:text-sky-600 dark:text-slate-300 dark:group-aria-selected:text-sky-400"
-      >
-        <HighlightQuery text={result.title} query={query} />
-      </div>
-      {hierarchy.length > 0 && (
+      <Link href={result.url} onClick={onClose} className="block px-3 py-2">
         <div
-          id={`${id}-hierarchy`}
+          id={`${id}-title`}
           aria-hidden="true"
-          className="mt-0.5 truncate text-xs whitespace-nowrap text-slate-500 dark:text-slate-400"
+          className="text-sm text-slate-700 group-aria-selected:text-sky-600 dark:text-slate-300 dark:group-aria-selected:text-sky-400"
         >
-          {hierarchy.map((item, itemIndex, items) => (
-            <Fragment key={itemIndex}>
-              <HighlightQuery text={item} query={query} />
-              <span
-                className={
-                  itemIndex === items.length - 1
-                    ? "sr-only"
-                    : "mx-2 text-slate-300 dark:text-slate-700"
-                }
-              >
-                /
-              </span>
-            </Fragment>
-          ))}
+          <HighlightQuery text={result.title} query={query} />
         </div>
-      )}
+        {hierarchy.length > 0 && (
+          <div
+            id={`${id}-hierarchy`}
+            aria-hidden="true"
+            className="mt-0.5 truncate text-xs whitespace-nowrap text-slate-500 dark:text-slate-400"
+          >
+            {hierarchy.map((item, itemIndex, items) => (
+              <Fragment key={itemIndex}>
+                <HighlightQuery text={item} query={query} />
+                <span
+                  className={
+                    itemIndex === items.length - 1
+                      ? "sr-only"
+                      : "mx-2 text-slate-300 dark:text-slate-700"
+                  }
+                >
+                  /
+                </span>
+              </Fragment>
+            ))}
+          </div>
+        )}
+      </Link>
     </li>
   );
 }
 
 function SearchResults({
   autocomplete,
+  activeItemId,
+  onClose,
   query,
   collection,
 }: {
   autocomplete: Autocomplete;
+  activeItemId: number | null;
+  onClose: () => void;
   query: string;
   collection?: AutocompleteCollection<Result>;
 }) {
@@ -119,12 +134,14 @@ function SearchResults({
 
   return (
     <ul {...autocomplete.getListProps()}>
-      {collection.items.map((result) => (
+      {collection.items.map((result, index) => (
         <SearchResult
           key={result.url}
           result={result}
           autocomplete={autocomplete}
           collection={collection}
+          isActive={activeItemId === index}
+          onClose={onClose}
           query={query}
         />
       ))}
@@ -238,6 +255,8 @@ export function SearchDialog({ onClose }: { onClose: () => void }) {
                 {autocompleteState.isOpen && (
                   <SearchResults
                     autocomplete={autocomplete}
+                    activeItemId={autocompleteState.activeItemId}
+                    onClose={close}
                     query={autocompleteState.query}
                     collection={autocompleteState.collections[0]}
                   />
