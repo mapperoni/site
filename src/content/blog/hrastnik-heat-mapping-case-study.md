@@ -5,6 +5,8 @@ publishedAt: "2026-10-06"
 updatedAt: "2026-10-06"
 author: Damien Schuster
 authorRole: Growth
+socialImage: /images/blog/hrastnik-heat-mapping-case-study/hrastnik-social-card.jpg
+socialImageAlt: Mapperoni map of Hrastnik covered in resident-submitted heat hot spots
 ---
 
 *Case study: Municipality of Hrastnik × LIFE4ADAPT × Mapperoni*
