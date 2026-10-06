@@ -5,8 +5,6 @@ publishedAt: "2026-10-06"
 updatedAt: "2026-10-06"
 author: Damien Schuster
 authorRole: Growth
-image: /images/blog/hrastnik-heat-mapping-case-study/hrastnik-heat-map.png
-imageAlt: Mapperoni map of Hrastnik covered in resident-submitted heat hot spots
 ---
 
 *Case study: Municipality of Hrastnik × LIFE4ADAPT × Mapperoni*
@@ -41,7 +39,7 @@ This is participatory GIS (PPGIS) doing what it does best:
 
 The results were quite insightful. All in all, by the end of August, 436 residents were able to designate hot spots in their local community and add their own insights. Thanks to Mapperoni, this simple yet elegant solution allowed the town’s residents to voice their feedback without tripping over technical barriers.
 
-![Hrastnik heat map in Mapperoni, with resident-submitted hot spots](/images/blog/hrastnik-heat-mapping-case-study/hrastnik-heat-map.png)
+![Hrastnik heat map in Mapperoni, with resident-submitted hot spots](/images/blog/hrastnik-heat-mapping-case-study/hrastnik-heat-map.jpg)
 
 ## The bigger picture
 
