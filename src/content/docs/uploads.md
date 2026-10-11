@@ -27,7 +27,7 @@ Lowering the maximum keeps files in existing answers. People can still edit othe
 
 ## How uploading works
 
-In a survey form, the respondent's uploads are saved immediately, even if they abandon the project. In a map feature form, the user must click **Save** to keep their files.
+In a survey form, the respondent's uploads are saved immediately, even if they abandon the project. In a map feature form, the user must click **Save** to keep their files. New File uploads can be downloaded after saving and reopening the feature details.
 
 ## View and export files
 
@@ -37,11 +37,13 @@ As a project manager, you can see how many files each answer contains in the **D
 
 ## Who can open files?
 
-- Team members who can read the project can open its saved files, including files in hidden fields.
-- People answering the project can open their own uploads while completing their submission. After reaching Conclusion, they can return to those files by reopening their submission if the project is set to use [Editable contribution mode](/docs/sharing-and-privacy).
-- Other people must enter the project and can open files only on map layers and fields they can see.
+- **Files on map features are private**, even when the feature is on a public layer. Team members who can read the project can download them in the **Project Map Editor** or **Project Data dashboard**, including files in hidden fields. Respondents can download their own saved files when editing that feature's details. In read-only feature details, other map visitors see each visible File question and its upload count, including zero. They cannot see filenames, file sizes, or download links. Hidden questions stay hidden.
+- **Photos on map features** follow the map's visibility settings. People who have entered the project can view photos on features and fields visible to them. An image uploaded through a **File** question follows the private File rules, even if it is a PNG or JPEG.
+- **Survey uploads** are available to project team members and the respondent who submitted them; entering a public project does not expose someone else's survey files.
 
-We use cookies and security tokens to prevent sharing of uploaded files and photos. This means external websites and apps cannot reference or embed files that were uploaded to Mapperoni.
+Respondent access requires a valid project cookie and the project's current access permissions. Map File downloads also require permission to edit the feature: hiding its field or layer, or disabling contributions, removes that access. After reaching Conclusion, respondents can return to their files by reopening their submission in [Editable contribution mode](/docs/sharing-and-privacy).
+
+Files are stored privately and served through Mapperoni after checking access on every request. Raw storage URLs are not exposed. Sharing a download link does not grant access: the recipient must have their own authorized team session or project cookie.
 
 Renaming a project breaks older file links, including links in exports. Export again to get current links.
 

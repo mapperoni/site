@@ -29,6 +29,8 @@ Empty answers are exported as blank cells. Dates and times use an international 
 
 [Photo and File answers](/docs/uploads) contain a full link to each uploaded file, separated by ` | ` when there are several. The ZIP does not include the files themselves. Opening a link requires current access to the file. Download any files you want to keep separately before deleting their answers, and export again if you rename the project.
 
+Exported links do not make uploads public. Files collected through a map feature's **File** question still require a project team session or a respondent authorized to edit that feature. Sharing the CSV or its links does not grant download access.
+
 ## Connect survey and map data
 
 The `submission_id` column appears in both `form_responses.csv` and every map-layer CSV. Use it to connect a respondent's non-map survey answers to all map features created as part of the same submission.
