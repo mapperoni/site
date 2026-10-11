@@ -5,6 +5,8 @@ description: Collect photos and files with survey answers and map features, revi
 
 Add a Photo or File question so your respondents can add attachments to their map data and survey responses. {% .lead %}
 
+{% next-image src="/images/docs/upload-photos-and-files.png" width=673 height=737 alt="Photo and File questions with two uploaded photo previews, a supporting spreadsheet, and buttons to add more attachments" /%}
+
 ## Add a question
 
 Photo and File uploads are available to teams on the Pro and Custom plans only.
@@ -19,7 +21,7 @@ We don't scan uploaded files for malware. Don't assume a file is safe because it
 
 Open **Field Settings** and set **Maximum number of uploads** to allow from 1 to 10 files per answer. The default is 1 upload per answer.
 
-{% next-image src="/images/docs/photo-field-settings.png" width=1122 height=1080 alt="Photo field settings showing Required, Hidden, and a maximum of three uploads" /%}
+{% next-image src="/images/docs/photo-field-settings.png" width=672 height=480 alt="Photo field settings showing Required, Hidden, and a maximum of three uploads" /%}
 
 Turn on **Required** if people must upload at least one file before continuing. You can also use [conditions](/docs/conditional-questions) to show or hide pages based on whether the answer is empty.
 
@@ -32,6 +34,10 @@ In a survey form, the respondent's uploads are saved immediately, even if they a
 ## View and export files
 
 As a project manager, you can see how many files each answer contains in the **Data** tab. Open a record by clicking it; the expanded details will show you file names, file sizes, and photo previews.
+
+The **Map Editor** also shows saved attachments in feature details, with photos you can enlarge and links to download files.
+
+{% next-image src="/images/docs/map-file-attachments.png" width=623 height=694 alt="Saved map feature responses in the Map Editor showing a photo preview, a private file download, and the file privacy help icon" /%}
 
 [Data exports](/docs/export-data) contain a link to each file in the CSV. The ZIP does not include the files themselves (full data export is on our roadmap, coming soon!). Download any files you want to keep separately, especially before deleting their answers.
 
@@ -59,7 +65,9 @@ Uploaded files and photos must not violate our [Acceptable Use Policy](/acceptab
 
 ## Storage
 
-Teams on the Pro and Custom plans receive **1 TB** of upload storage by default, shared across all their projects. Free and Personal teams have no upload storage by default. Your team's overview shows its current allowance, usage, and remaining space. See [Pricing](/docs/pricing).
+Teams on the Pro and Custom plans receive **1 TB** of upload storage by default, shared across all their projects. Free and Personal teams have no upload storage by default. Your team's **Team Plan** card shows **Storage limit** and **Storage used** beside participant usage. These figures appear when the team has a storage allowance or stored files; teams with retained files and no allowance still see their usage. See [Pricing](/docs/pricing).
+
+{% next-image src="/images/docs/upload-storage.png" width=961 height=267 alt="Team Plan card with participant usage, a 1000 GB storage limit, and storage used displayed as matching label and value pairs" /%}
 
 When storage is full, new uploads are blocked immediately. Existing files remain available to people who can access them. Contact us and we can customize your plan to increase this limit.
 
