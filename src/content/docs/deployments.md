@@ -24,3 +24,7 @@ Deploying your own instance comes with many benefits:
 - Total control over the database and who has access.
 - Request custom features.
 - Enhance the platform for additional security, access, and compliance controls.
+
+## Upload storage
+
+[Photo and File questions](/docs/uploads) need a private Hetzner storage bucket. Your administrator configures it using the `UPLOAD_S3_*` environment variables. Files are served through your Mapperoni server. Include the stored files as well as the database in your backup plan; data exports contain links, not copies of uploaded files.
