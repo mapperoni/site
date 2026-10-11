@@ -11,7 +11,7 @@ Photo and File uploads are available to teams on the Pro and Custom plans only.
 
 In the project editor, choose **Insert Form Field**, then **Photo** or **File**. To collect attachments and associate them with a map feature, add the question to the map layer's form (found in the [Map Editor](/docs/maps)).
 
-Photo questions accept JPEG, PNG, and WebP images. File questions accept most file types, including PDFs and spreadsheets. Executable and script files ending in `.exe`, `.com`, `.msi`, `.scr`, `.bat`, `.cmd`, `.ps1`, or `.vbs` are blocked. Each file can be up to **15 MB**.
+Photo questions accept JPEG, PNG, and WebP images. File questions accept most file types, including PDFs and spreadsheets. Each file can be up to **15 MB**.
 
 {% callout type="warning" title="Take care when opening uploaded files" %}
 We don't scan uploaded files for malware. Don't assume a file is safe because it was uploaded to Mapperoni. Only open files from sources you trust.
