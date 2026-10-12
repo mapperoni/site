@@ -25,6 +25,8 @@ Open your project and choose the **Data** tab.
 
 You can sort records from newest to oldest or oldest to newest, filter them by date, and use **Refresh** to load newly submitted data. Survey Responses are filtered by their started date, while layer features are filtered by the date each feature was created. Use the eye button beside a record to see its details.
 
+Photo and File answers show a file count in the table. Open the record to see file names and sizes, download files, or browse photos. See [Photos & files](/docs/uploads).
+
 {% next-image src="/images/docs/project-data-layer.png" width=2048 height=1536 alt="Project Data table showing the records collected for a map layer" /%}
 
 ## Inspect a map feature
@@ -35,7 +37,7 @@ Feature details include the submitted answers, creation time, feature ID, and ge
 
 ## Delete data
 
-Deletion is permanent and cannot be undone. If you may need the data later, [export the project](/docs/export-data) before deleting it.
+Deletion is permanent and cannot be undone. If you may need the data later, [export the project](/docs/export-data) and download any uploaded files before deleting it. The export contains links to files, not copies of them.
 
 ### Delete a survey response
 
@@ -44,8 +46,11 @@ Deleting a survey response removes:
 - Its non-map survey answers.
 - Every map feature associated with that submission, across all layers.
 - The answers attached to those map features.
+- Uploaded files attached to any of those answers.
 
-The confirmation screen shows how many associated map features will also be removed. Historical attempt counts used by the project overview are retained, so the **Total submission attempts** and **Completed submission attempts** figures may not decrease after deletion.
+The confirmation screen shows how many associated map features will also be removed. Deleting a submission starts removing its uploaded files in the background. Storage becomes available after the files have been removed.
+
+Historical attempt counts used by the project overview are retained, so the **Total submission attempts** and **Completed submission attempts** figures may not decrease after deletion.
 
 ### Delete a map feature
 

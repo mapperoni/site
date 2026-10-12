@@ -19,6 +19,10 @@ Click **Add Layer** to create a point layer. A layer is a category for pins on t
 
 Open a layer to give it a clear name and optional description. You can also add form fields to collect details for every pin in that layer, such as a description, photo, or contact information.
 
+Choose **Photo** or **File** to collect files with each feature. Set the number allowed in **Field Settings**. See [Photos & files](/docs/uploads) for formats, limits, and access.
+
+**File** answers stay private even on public layers. Only project team members and respondents authorized to edit the feature can download its saved files. In read-only feature details, visible File questions show only an upload count, including zero; filenames and download links stay private. Public map visitors can see **Photo** answers where the feature and field are visible.
+
 Use the color button beside a layer to change its color. From the same menu, you can:
 
 - Hide the layer to remove it from the public map and stop new responses while keeping its existing data in the editor.

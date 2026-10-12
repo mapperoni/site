@@ -9,13 +9,17 @@ Start for free. Paid plans are billed monthly. {% .lead %}
 
 {% pricing-tier name="Free" price="€0" features=["3 projects", "100 monthly participants", "1 team member"] /%}
 
-{% pricing-tier name="Personal" price="€12" features=["Unlimited projects", "All features and settings", "500 monthly participants", "1 team member"] /%}
+{% pricing-tier name="Personal" price="€12" features=["Unlimited projects", "500 monthly participants", "1 team member"] /%}
 
-{% pricing-tier name="Pro" price="€120" features=["Unlimited projects", "All features and settings", "5,000 monthly participants", "Up to 25 team members"] highlight=true /%}
+{% pricing-tier name="Pro" price="€120" features=["Unlimited projects", "All features and settings", "Photo and File uploads", "1 TB team storage", "5,000 monthly participants", "Up to 25 team members"] highlight=true /%}
 
 {% pricing-tier name="Custom" features=["Higher usage limits", "Custom website domains", "Self-hosting and enterprise deploys", "Custom branding", "Feature requests and integrations", "Advanced support"] href="mailto:support@mapperoni.com" cta="Contact us" /%}
 
 {% /pricing-tiers %}
+
+**Photo and File storage**
+
+Pro and Custom teams include 1 TB of upload storage by default, shared across the team's projects. Free and Personal have no upload storage by default. Each file can be up to 15 MB, with 1–10 files per answer. See [Photos & files](/docs/uploads) for details.
 
 **How participants are counted**
 
