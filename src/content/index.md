@@ -57,10 +57,6 @@ This feature is on the roadmap but not yet implemented.
 
 No. Mapperoni is a browser-based survey tool, so offline responses are not supported yet. Consider a mobile app like Esri's Survey123 instead.
 
-### Can I embed my project on other web pages?
-
-Yes, you should be able to use an `<iframe />` element. Please see our documentation on [Sharing and privacy](/docs/sharing-and-privacy)
-
 ### What is collaborative and crowd-sourced mapping?
 
 Collaborative and crowd-sourced mapping involves asking a bunch of people to mark stuff on a map. It has other names as well:
