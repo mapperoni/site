@@ -17,6 +17,10 @@ Start for free. Paid plans are billed monthly. {% .lead %}
 
 {% /pricing-tiers %}
 
+**How to upgrade**
+
+Navigate to your {% link href="https://app.mapperoni.com/teams" target="_blank" %}team page{% /link %} and upgrade in seconds with a credit card. {% link href="mailto:support@mapperoni.com" %}Contact us{% /link %} if you need special accommodations, a different payment method, or anything else.
+
 **Photo and File storage**
 
 Pro and Custom teams include 1 TB of upload storage by default, shared across the team's projects. Free and Personal have no upload storage by default. Each file can be up to 15 MB, with 1–10 files per answer. See [Photos & files](/docs/uploads) for details.
@@ -28,7 +32,3 @@ Participant limits are shared across all projects in a team and reset each billi
 However, if a user finishes and starts a new response, this is counted as another participant (even if it's the same individual on the same device).
 
 If you are logged in and responding to your own project, you are not counted. That way, you can test and preview your project freely without counting toward the limit.
-
-**How to upgrade**
-
-Navigate to your {% link href="https://app.mapperoni.com/teams" target="_blank" %}team page{% /link %} and upgrade in seconds with a credit card. {% link href="mailto:support@mapperoni.com" %}Contact us{% /link %} if you need special accommodations, a different payment method, or anything else.
